@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1595631740813,
+  "timestamp": 1595632082197,
   "index": "https://annachrzaszcz.github.io/TOPCAT/index.html",
   "assetGroups": [
     {
@@ -29,6 +29,7 @@
       },
       "urls": [
         "https://annachrzaszcz.github.io/TOPCAT/assets/icons/Android.png",
+        "https://annachrzaszcz.github.io/TOPCAT/assets/icons/Android.svg",
         "https://annachrzaszcz.github.io/TOPCAT/assets/icons/Android2.png",
         "https://annachrzaszcz.github.io/TOPCAT/assets/icons/announ.png",
         "https://annachrzaszcz.github.io/TOPCAT/assets/icons/helio.jpg",
@@ -55,6 +56,7 @@
   "dataGroups": [],
   "hashTable": {
     "https://annachrzaszcz.github.io/TOPCAT/assets/icons/Android.png": "fbaca095808fcce32a54e837b76407ad5aac0663",
+    "https://annachrzaszcz.github.io/TOPCAT/assets/icons/Android.svg": "0ac76002ec1c901b6d59baf1151cf2e3fe901f8e",
     "https://annachrzaszcz.github.io/TOPCAT/assets/icons/Android2.png": "0ac76002ec1c901b6d59baf1151cf2e3fe901f8e",
     "https://annachrzaszcz.github.io/TOPCAT/assets/icons/announ.png": "a0b7f324a26da42852eb52b204321d1d3289ed92",
     "https://annachrzaszcz.github.io/TOPCAT/assets/icons/helio.jpg": "6374492ac77e07559029906bc1ddd89328987b7c",

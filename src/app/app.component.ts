@@ -5,7 +5,7 @@ import {Component, OnInit} from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements  OnInit{
+export class AppComponent{
 
   title = 'TOPCATTT';
   ogloszenia = true;
@@ -15,7 +15,8 @@ export class AppComponent implements  OnInit{
   program = false;
   spirit = false;
   stream = false;
-  menu: boolean[] = [this.ogloszenia, this.tabela, this.rozpiska, this.mapka, this.program];
+  rules = false;
+ /* menu: boolean[] = [this.ogloszenia, this.tabela, this.rozpiska, this.mapka, this.program];
   spiritMap = {Zawierucha: 0,
     mJah: 0,
     Flow: 0,
@@ -28,14 +29,13 @@ export class AppComponent implements  OnInit{
     'Rainbow Banana': 0,
     'KWR Knury': 0,
     'Grandmaster Flash': 0
-  };
-  i = 1;
+  };*/
 
-  ngOnInit(): void {
+ /* ngOnInit(): void {
     this.menu.forEach(el => {
       console.log(el);
     });
-  }
+  }*/
 
 
   fun_ogloszenia(): void {
@@ -46,6 +46,7 @@ export class AppComponent implements  OnInit{
     this.mapka = false;
     this.spirit = false;
     this.stream = false;
+    this.rules = false;
     /*this.menu.forEach(el => {
       el = false;
     });
@@ -59,7 +60,8 @@ export class AppComponent implements  OnInit{
    this.ogloszenia = false;
    this.mapka = false;
    this.spirit = false;
-    this.stream = false;
+   this.stream = false;
+   this.rules = false;
   }
 
   fun_mapka(): void {
@@ -70,6 +72,7 @@ export class AppComponent implements  OnInit{
     this.ogloszenia = false;
     this.spirit = false;
     this.stream = false;
+    this.rules = false;
   }
 
   fun_program(): void {
@@ -80,6 +83,7 @@ export class AppComponent implements  OnInit{
     this.ogloszenia = false;
     this.spirit = false;
     this.stream = false;
+    this.rules = false;
   }
   fun_charts(): void {
     this.tabela = true;
@@ -89,6 +93,7 @@ export class AppComponent implements  OnInit{
     this.mapka = false;
     this.spirit = false;
     this.stream = false;
+    this.rules = false;
   }
 
   fun_spirit(): void {
@@ -99,10 +104,23 @@ export class AppComponent implements  OnInit{
     this.ogloszenia = false;
     this.mapka = false;
     this.stream = false;
+    this.rules = false;
   }
 
   fun_stream(): void {
     this.stream = true;
+    this.spirit = false;
+    this.tabela = false;
+    this.rozpiska = false;
+    this.program = false;
+    this.ogloszenia = false;
+    this.mapka = false;
+    this.rules = false;
+  }
+
+  fun_rules(): void {
+    this.rules = true;
+    this.stream = false;
     this.spirit = false;
     this.tabela = false;
     this.rozpiska = false;

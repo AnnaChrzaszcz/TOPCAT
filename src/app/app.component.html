@@ -4,11 +4,13 @@
       <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
         <mat-icon>menu</mat-icon>
       </button>
-      <span (click)="fun_ogloszenia()" >TOP CAT <img alt="logo" src="assets/icons/logo.png" width="60px" height="60px"></span>
+     <!-- <span (click)="fun_ogloszenia()" >TOP CAT <img alt="logo" src="assets/icons/logo.png" width="60px" height="60px"></span>-->
+      <span> <img (click)="fun_ogloszenia()"  alt="logo" src="assets/icons/Android.svg" width="80px" height="80px"></span>
       <span class="menu-spacer"></span>
       <div fxShow="true" fxHide.lt-md>
         <!-- The following menu items will be hidden on both SM and XS screen sizes -->
         <a href="#" mat-button>Announcements</a>
+        <a href="#" mat-button>Rules</a>
         <a href="#" mat-button>Schedule</a>
         <a href="#" mat-button>Results</a>
         <a href="#" mat-button>Program</a>
@@ -22,13 +24,14 @@
   <mat-sidenav-container fxFlexFill>
     <mat-sidenav #sidenav>
       <mat-nav-list>
-        <a href="#"  (click)="fun_ogloszenia(); sidenav.toggle()" mat-list-item><mat-icon color="black">notifications</mat-icon>Announcements</a>
-        <a href="#" (click)="fun_rozpiska(); sidenav.toggle()" mat-list-item>Schedule</a>
-        <a href="#" (click)="fun_charts(); sidenav.toggle()" mat-list-item>Results</a>
-        <a href="#" (click)="fun_program(); sidenav.toggle()" mat-list-item>Program</a>
-        <a href="#" (click)="fun_mapka(); sidenav.toggle()" mat-list-item><mat-icon color="black">room</mat-icon>Map</a>
-        <a href="#" (click)="fun_spirit(); sidenav.toggle()" mat-list-item>SOTG</a>
-        <a href="#" (click)="fun_stream(); sidenav.toggle()" mat-list-item>Stream</a>
+        <a href="#"  (click)="fun_ogloszenia(); sidenav.toggle()" mat-list-item><img alt="ann" src="assets/icons/announ.png" class="icon">Announcements</a>
+        <a href="#" (click)="fun_rules(); sidenav.toggle()" mat-list-item>Rules</a>
+        <a href="#" (click)="fun_rozpiska(); sidenav.toggle()" mat-list-item><img alt="schedule" src="assets/icons/sched.png" class="icon">Schedule</a>
+        <a href="#" (click)="fun_charts(); sidenav.toggle()" mat-list-item><img alt="result" src="assets/icons/resul.png" class="icon">Results</a>
+        <a href="#" (click)="fun_program(); sidenav.toggle()" mat-list-item><img alt="program" src="assets/icons/program.png" class="icon">Program</a>
+        <a href="#" (click)="fun_mapka(); sidenav.toggle()" mat-list-item><img alt="map" src="assets/icons/map.png" class="icon">Map</a>
+        <a href="#" (click)="fun_spirit(); sidenav.toggle()" mat-list-item><img alt="sotg" src="assets/icons/sotg.png" class="icon">SOTG</a>
+        <a href="#" (click)="fun_stream(); sidenav.toggle()" mat-list-item><img alt="stream" src="assets/icons/stream.png" class="icon">Stream</a>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>
@@ -125,6 +128,10 @@
         </div>
       </div>
 
+      <div class="content" *ngIf="rules" >  <!--///////////////////////////////////////////////////////////////// RULES ////////////////////////////-->
+        <h1>Rules</h1>
+      </div>
+
       <div class="content" *ngIf="spirit" >  <!--///////////////////////////////////////////////////////////////// SPIRIT ////////////////////////////-->
         <h1>Spirit of the game</h1>
         <div >
@@ -135,8 +142,9 @@
       <div class="content" *ngIf="rozpiska" >  <!--///////////////////////////////////////////////////////////////// SCHEDULE ////////////////////////////-->
         <h1>Schedule</h1>
         <table style="width:100%">
+          <h3>Friday</h3>
           <tr>
-            <th>Date</th>
+            <th>Game</th>
             <th>Hour</th>
             <th>🏟</th>
             <th>Team 1</th>
@@ -144,7 +152,7 @@
             <th>Team 2</th>
           </tr>
           <tr>
-            <td>Friday</td>
+            <td></td>
             <td>18:30-20:00</td>
             <td>1</td>
             <td>4H</td>
@@ -152,7 +160,7 @@
             <td>RB</td>
           </tr>
           <tr>
-            <td>Friday</td>
+            <td></td>
             <td>18:30-20:00</td>
             <td>2</td>
             <td>RJP</td>
@@ -160,23 +168,27 @@
             <td>OUT</td>
           </tr>
           <tr>
-            <td>Friday</td>
+            <td></td>
             <td>18:30-20:00</td>
             <td>3</td>
             <td>BUMP!</td>
             <td>_ : _</td>
             <td>CK</td>
           </tr>
-          <tr class="break">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+        </table>
+        <br>
+        <table style="width:100%">
+          <h3>Saturday</h3>
+          <tr>
+            <th>Game</th>
+            <th>Hour</th>
+            <th>🏟</th>
+            <th>Team 1</th>
+            <th>SOTG️️️</th>
+            <th>Team 2</th>
           </tr>
           <tr>
-            <td>Saturday</td>
+            <td></td>
             <td>8:15-9:35</td>
             <td>1</td>
             <td>ZWR</td>
@@ -184,7 +196,7 @@
             <td>FLOW</td>
           </tr>
           <tr>
-            <td>Saturday</td>
+            <td></td>
             <td>8:15-9:35</td>
             <td>2</td>
             <td>FUJ</td>
@@ -192,7 +204,7 @@
             <td>GMF</td>
           </tr>
           <tr>
-            <td>Saturday</td>
+            <td></td>
             <td>8:15-9:35</td>
             <td>3</td>
             <td>mJah</td>
@@ -200,7 +212,7 @@
             <td>KWR</td>
           </tr>
           <tr>
-            <td>Saturday</td>
+            <td></td>
             <td>10:00-11:20</td>
             <td>1</td>
             <td>BUMP</td>
@@ -208,7 +220,7 @@
             <td>mJah</td>
           </tr>
           <tr>
-            <td>Saturday</td>
+            <td></td>
             <td>10:00-11:20</td>
             <td>2</td>
             <td>ZWR</td>
@@ -216,7 +228,7 @@
             <td>RB</td>
           </tr>
           <tr>
-            <td>Saturday</td>
+            <td></td>
             <td>10:00-11:20</td>
             <td>3</td>
             <td>OUT</td>
@@ -224,7 +236,7 @@
             <td>GMF</td>
           </tr>
           <tr>
-            <td>Saturday</td>
+            <td></td>
             <td>11:45-13:05</td>
             <td>1</td>
             <td>CK</td>
@@ -232,7 +244,7 @@
             <td>KWR</td>
           </tr>
           <tr>
-            <td>Saturday</td>
+            <td></td>
             <td>11:45-13:05</td>
             <td>2</td>
             <td>4H</td>
@@ -240,7 +252,7 @@
             <td>Flow</td>
           </tr>
           <tr>
-            <td>Saturday</td>
+            <td></td>
             <td>11:45-13:05</td>
             <td>3</td>
             <td>FUJ</td>
@@ -248,7 +260,7 @@
             <td>RJP</td>
           </tr>
           <tr>
-            <td>Saturday</td>
+            <td></td>
             <td>13:30-14:50</td>
             <td>1</td>
             <td>ZWR</td>
@@ -256,7 +268,7 @@
             <td>4H</td>
           </tr>
           <tr>
-            <td>Saturday</td>
+            <td></td>
             <td>13:30-14:50</td>
             <td>2</td>
             <td>OUT</td>
@@ -264,7 +276,7 @@
             <td>FUJ</td>
           </tr>
           <tr>
-            <td>Saturday</td>
+            <td></td>
             <td>13:30-14:50</td>
             <td>3</td>
             <td>CK</td>
@@ -272,7 +284,7 @@
             <td>mJah</td>
           </tr>
           <tr>
-            <td>Saturday</td>
+            <td></td>
             <td>15:15-16:35</td>
             <td>1</td>
             <td>Flow</td>
@@ -280,7 +292,7 @@
             <td>RB</td>
           </tr>
           <tr>
-            <td>Saturday</td>
+            <td></td>
             <td>15:15-16:35</td>
             <td>2</td>
             <td>RJP</td>
@@ -288,23 +300,15 @@
             <td>GMF</td>
           </tr>
           <tr>
-            <td>Saturday</td>
+            <td></td>
             <td>15:15-16:35</td>
             <td>3</td>
             <td>KWR</td>
             <td>_ : _</td>
             <td>BUMP</td>
           </tr>
-          <tr class="break">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
           <tr>
-            <td>Saturday</td>
+            <td></td>
             <td>17:01-18:31</td>
             <td>1</td>
             <td>3.</td>
@@ -312,7 +316,7 @@
             <td>6.</td>
           </tr>
           <tr>
-            <td>Saturday</td>
+            <td></td>
             <td>17:01-18:31</td>
             <td>2</td>
             <td>2.</td>
@@ -320,126 +324,132 @@
             <td>7.</td>
           </tr>
           <tr>
-            <td>Saturday</td>
+            <td></td>
             <td>17:01-18:31</td>
             <td>3</td>
             <td>1.</td>
             <td>Q1</td>
             <td>8.</td>
           </tr>
-          <tr class="break">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+        </table>
+        <br>
+        <table style="width:100%">
+          <h3>Sunday</h3>
+          <tr>
+            <th>Game</th>
+            <th>Hour</th>
+            <th>🏟</th>
+            <th>Team 1</th>
+            <th>SOTG️️️</th>
+            <th>Team 2</th>
           </tr>
           <tr>
-            <td>Sunday</td>
+            <td>Q2</td>
             <td>07:40-09:10</td>
             <td>1</td>
             <td>4.</td>
-            <td>Q2</td>
+            <td></td>
             <td>5.</td>
           </tr>
           <tr>
-            <td>Sunday</td>
+            <td>S''1</td>
             <td>07:40-09:10</td>
             <td>2</td>
             <td>9.</td>
-            <td>S''1</td>
+            <td></td>
             <td>12.</td>
           </tr>
           <tr>
-            <td>Sunday</td>
+            <td>S''2</td>
             <td>07:40-09:10</td>
             <td>3</td>
             <td>10.</td>
-            <td>S''2</td>
+            <td></td>
             <td>11.</td>
           </tr>
           <tr>
-            <td>Sunday</td>
+            <td>S1</td>
             <td>09:35-11:05</td>
             <td>1</td>
             <td>WQ1</td>
-            <td>S1</td>
+            <td></td>
             <td>WQ2</td>
           </tr>
           <tr>
-            <td>Sunday</td>
+            <td>S2</td>
             <td>09:35-11:05</td>
             <td>2</td>
             <td>WQ3</td>
-            <td>S2</td>
+            <td></td>
             <td>WQ4</td>
           </tr>
           <tr>
-            <td>Sunday</td>
+            <td>F11</td>
             <td>09:35-11:05</td>
             <td>3</td>
             <td>LS''1</td>
-            <td>F11</td>
+            <td></td>
             <td>LS''2</td>
           </tr>
           <tr>
-            <td>Sunday</td>
+            <td>F9</td>
             <td>11:15-12:45</td>
             <td>1</td>
             <td>WS''1</td>
-            <td>F9</td>
+            <td></td>
             <td>WS''2</td>
           </tr>
           <tr>
-            <td>Sunday</td>
+            <td>S'2</td>
             <td>11:15-12:45</td>
             <td>2</td>
             <td>LQ3</td>
-            <td>S'2</td>
+            <td></td>
             <td>LQ4</td>
           </tr>
           <tr>
-            <td>Sunday</td>
+            <td>S'1</td>
             <td>11:15-12:45</td>
             <td>3</td>
             <td>LQ1</td>
-            <td>S'1</td>
+            <td></td>
             <td>LQ2</td>
           </tr>
           <tr>
-            <td>Sunday</td>
+            <td>F3</td>
             <td>13:10-14:40</td>
             <td>1</td>
             <td>LS1</td>
-            <td>F3</td>
+            <td></td>
             <td>LS2</td>
           </tr>
           <tr>
-            <td>Sunday</td>
+            <td>F5</td>
             <td>13:10-14:40</td>
             <td>2</td>
             <td>WS'1</td>
-            <td>F5</td>
+            <td></td>
             <td>WS'2</td>
           </tr>
           <tr>
-            <td>Sunday</td>
+            <td>F7</td>
             <td>13:10-14:40</td>
             <td>3</td>
             <td>LS'1</td>
-            <td>F7</td>
+            <td></td>
             <td>LS'2</td>
           </tr>
           <tr style="border-color: indianred; border-style: groove">
-            <td>Sunday</td>
+            <td>F1</td>
             <td>14:50-16:20</td>
             <td>1</td>
             <td>WS1</td>
-            <td>F1</td>
+            <td></td>
             <td>WS2</td>
           </tr>
         </table>
+
+
         <!--<br><br><br><br>
         <h2>SPIRIT TABLE</h2>
         <table>
@@ -725,7 +735,7 @@
 
       <div class="content" *ngIf="mapka" >  <!--///////////////////////////////////////////////////////////////// MAP ////////////////////////////-->
         <h1>Map</h1>
-        <iframe src="https://www.google.com/maps/d/u/3/embed?mid=1UY5zSD1r3S06MKoGOBCXumLhN4Q5kWos"  style="position: absolute" width="100%" height="100%" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/d/u/3/embed?mid=1UY5zSD1r3S06MKoGOBCXumLhN4Q5kWos"  style="position: absolute" width="95%" height="100%" allowfullscreen></iframe>
       </div>
 
       <div class="content" *ngIf="program" >  <!--///////////////////////////////////////////////////////////////// PROGRAM ////////////////////////////-->

@@ -14,6 +14,7 @@ export class AppComponent implements  OnInit{
   mapka = false;
   program = false;
   spirit = false;
+  stream = false;
   menu: boolean[] = [this.ogloszenia, this.tabela, this.rozpiska, this.mapka, this.program];
   spiritMap = {Zawierucha: 0,
     mJah: 0,
@@ -44,6 +45,7 @@ export class AppComponent implements  OnInit{
     this.program = false;
     this.mapka = false;
     this.spirit = false;
+    this.stream = false;
     /*this.menu.forEach(el => {
       el = false;
     });
@@ -57,6 +59,7 @@ export class AppComponent implements  OnInit{
    this.ogloszenia = false;
    this.mapka = false;
    this.spirit = false;
+    this.stream = false;
   }
 
   fun_mapka(): void {
@@ -66,6 +69,7 @@ export class AppComponent implements  OnInit{
     this.program = false;
     this.ogloszenia = false;
     this.spirit = false;
+    this.stream = false;
   }
 
   fun_program(): void {
@@ -75,6 +79,7 @@ export class AppComponent implements  OnInit{
     this.tabela = false;
     this.ogloszenia = false;
     this.spirit = false;
+    this.stream = false;
   }
   fun_charts(): void {
     this.tabela = true;
@@ -83,10 +88,22 @@ export class AppComponent implements  OnInit{
     this.ogloszenia = false;
     this.mapka = false;
     this.spirit = false;
+    this.stream = false;
   }
 
   fun_spirit(): void {
     this.spirit = true;
+    this.tabela = false;
+    this.rozpiska = false;
+    this.program = false;
+    this.ogloszenia = false;
+    this.mapka = false;
+    this.stream = false;
+  }
+
+  fun_stream(): void {
+    this.stream = true;
+    this.spirit = false;
     this.tabela = false;
     this.rozpiska = false;
     this.program = false;

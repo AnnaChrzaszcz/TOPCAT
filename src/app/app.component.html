@@ -1,0 +1,731 @@
+<div style="height: 80vh;">
+  <mat-toolbar class="my-menu">
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span (click)="fun_ogloszenia()" >TOP CAT <img alt="logo" src="../assets/icons/logo.jpg" width="60px" height="60px"></span>
+      <span class="menu-spacer"></span>
+      <div fxShow="true" fxHide.lt-md>
+        <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+        <a href="#" mat-button>Announcements</a>
+        <a href="#" mat-button>Schedule</a>
+        <a href="#" mat-button>Results</a>
+        <a href="#" mat-button>Program</a>
+        <a href="#" mat-button>Map</a>
+        <a href="#" mat-button>SOTG</a>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-sidenav-container fxFlexFill>
+    <mat-sidenav #sidenav>
+      <mat-nav-list>
+        <a href="#"  (click)="fun_ogloszenia(); sidenav.toggle()" mat-list-item><mat-icon color="black">notifications</mat-icon>Announcements</a>
+        <a href="#" (click)="fun_rozpiska(); sidenav.toggle()" mat-list-item>Schedule</a>
+        <a href="#" (click)="fun_charts(); sidenav.toggle()" mat-list-item>Results</a>
+        <a href="#" (click)="fun_program(); sidenav.toggle()" mat-list-item>Program</a>
+        <a href="#" (click)="fun_mapka(); sidenav.toggle()" mat-list-item><mat-icon color="black">room</mat-icon>Map</a>
+        <a href="#" (click)="fun_spirit(); sidenav.toggle()" mat-list-item>SOTG</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill>
+      <div class="content" *ngIf="ogloszenia" >  <!--///////////////////////////////////////////////////////////////// ANNOUNCEMENTS ////////////////////////////-->
+        <h1>Announcements</h1>
+        <div class="announcements">
+          <p>
+            <strong>Dance Battle
+              21.7 <br> 15:00</strong>
+            <br>
+            Idusia jest super
+          </p>
+        </div>
+        <div class="announcements">
+          <p>
+          <strong>Dance Battle
+          21.7 <br> 15:00</strong>
+          <br>
+          Dear all!
+          Get ready for one of the biggest attractions of the evening! Apart from the fierce matches and the best style competition, each team will be challenged to participate in the DANCE BATTLE! What is this about? By the end of next week please send us two songs to which you will design a choreography. Each team will have to present their dance to the audience. During the tournament, we will draw you a rival against whom you will fight on stage. Also, on Saturday morning, each team will draw a theme that you and your rival will have to spontaneously implement into your choreography (the rival will have the same theme), for example: a belly dance, jungle dance, baptism, etc. You will have all day to think about your performance.
+          The winning teams will move on to the next stage, and with every stage it will be more and more difficult! In the second round, the second song of your choice will be played, but the theme will be drawn right before the performance itself.
+          In the finals, there will be 3 teams and you will all dance together to our song.
+          Good luck!
+          </p>
+      </div>
+        <div class="announcements">
+          <p>
+            <strong>Ciekawostka z Żoliborza
+              22.07 <br> 02:01</strong>
+            <br>
+            Siema Siema!
+            Tu Aniula Mentol pozdrawiam wszystkie mordeczki <br>
+            <img src="../assets/icons/helio.jpg" alt="jedrula" style="height: 200px; width: 133px; margin: 3px; float: inherit">
+            Z fartem!
+          </p>
+        </div>
+        <div class="announcements">
+          <p>
+            <strong>Dance battle by Grycha - Saturday B-day Party
+              22.07 <br> 02:01</strong>
+            <br>
+            Dear all!
+
+            Get ready for one of the biggest attractions of the evening! Apart from the fierce matches and the best style competition, each team will be challenged to participate in the DANCE BATTLE! What is this about? By the Wednesday 29/7 please send us two songs to which you will design a choreography. Each team will have to present their dance to the audience. During the tournament, we will draw you a rival against whom you will fight on stage. Also, on Saturday morning, each team will draw a theme that you and your rival will have to spontaneously implement into your choreography (the rival will have the same theme), for example: a belly dance, jungle dance, baptism, etc. You will have all day to think about your performance.
+            The winning teams will move on to the next stage, and with every stage it will be more and more difficult! In the second round, the second song of your choice will be played, but the theme will be drawn right before the performance itself.
+            In the finals, there will be 3 teams and you will all dance together to our song, the winner gets a special prize.
+
+            Good luck!
+            Grycha
+          </p>
+        </div>
+        <div class="announcements">
+          <p>
+            <strong>Friday Welcome Party grill for PLN beer for CC
+              22.07 <br> 02:01</strong>
+            <br>
+            Ok, there is a B-day Party on Saturday, what other parties do we have? Welcome Party on Friday. You can register your team there and get your gifts, there will be a grill prepared by our partner Hotel "Dom Polonii" where you can buy some sizzling bites (saussage, kashanka, shashlik etc.) and beer.
+            💰 To buy drinks you will need to get cryptocats first. Cryptocats are official TOP CAT's currency. CCs are "ocean tokens" made from old fishing nets. 1CC = 10 zł. To buy something from grill on Friday you need zlotys though.
+          </p>
+        </div>
+        <div class="announcements">
+          <p>
+            <strong>Music is important 🎤
+              22.07 <br> 02:01</strong>
+            <br>
+            20 hours of games means 20 hours of music, and that's not even half of all the music! We want you to get involved in creating the playlist and share some songs with us. We will play it (at least once) during the tournament.
+            <br><a href="https://www.youtube.com/playlist?list=PLaL5nuPfgkIOw0I6nRK9ovC6XHE1lsFsS&jct=tseUe1CfzSrBfwelRd-GFP1kKIKNPg">🎵 ADD YOUR SONG 🎵</a>
+          </p>
+        </div>
+        <div class="announcements">
+          <p>
+            <strong>Gondola Cruise 🛶
+              22.07 <br> 02:01</strong>
+            <br>
+            At first we wanted to organise a cruise for each team, but it turned out to be too much time-consuming. In the end we decided we will send 12 representants from every team to the cruise, which will also be one of the Teams Gigathlon's disciplines. They will get to know each other and will be challanged by a special team-building task. Please choose your daredevil (1 player from your team) to join the gondola cruise and sign up in tournament's office by the end of Saturday games.
+          </p>
+        </div>
+        <div class="announcements">
+          <p>
+            <strong>First games on Friday at 18:30
+              22.07 <br> 02:01</strong>
+            <br>
+            Full schedule will be out soon, but already we know that first games for the TOP CAT 2020 title will happen on Friday evening. Here is the list of teams that will play on Friday:
+          </p>
+          <ol>
+            <li>OUT, Budapest</li>
+            <li>Rainbow Banana, Bohumín</li>
+            <li>BUMP!, Bruxelles</li>
+            <li>RJP, Warszawa</li>
+            <li>Czarna Kompania, Poznań</li>
+            <li>4hands, Warszawa</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="content" *ngIf="spirit" >  <!--///////////////////////////////////////////////////////////////// SPIRIT ////////////////////////////-->
+        <h1>Spirit of the game</h1>
+        <div >
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFdFuqTpU4R3GarAk4EaHxJV9fFILRXUej-ccDwoGsSfz6ig/viewform?embedded=true" style="position: absolute" width="100%" height="100%" >Ładuję…</iframe>
+        </div>
+      </div>
+
+      <div class="content" *ngIf="rozpiska" >  <!--///////////////////////////////////////////////////////////////// SCHEDULE ////////////////////////////-->
+        <h1>Schedule</h1>
+        <table style="width:100%">
+          <tr>
+            <th>Date</th>
+            <th>Hour</th>
+            <th>🏟</th>
+            <th>Team 1</th>
+            <th>SOTG️️️</th>
+            <th>Team 2</th>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>18:30-20:00</td>
+            <td>1</td>
+            <td>4H</td>
+            <td>_ : _</td>
+            <td>RB</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>18:30-20:00</td>
+            <td>2</td>
+            <td>RJP</td>
+            <td>_ : _</td>
+            <td>OUT</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>18:30-20:00</td>
+            <td>3</td>
+            <td>BUMP!</td>
+            <td>_ : _</td>
+            <td>CK</td>
+          </tr>
+          <tr class="break">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>8:15-9:35</td>
+            <td>1</td>
+            <td>ZWR</td>
+            <td>_ : _</td>
+            <td>FLOW</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>8:15-9:35</td>
+            <td>2</td>
+            <td>FUJ</td>
+            <td>_ : _</td>
+            <td>GMF</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>8:15-9:35</td>
+            <td>3</td>
+            <td>mJah</td>
+            <td>_ : _</td>
+            <td>KWR</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>10:00-11:20</td>
+            <td>1</td>
+            <td>BUMP</td>
+            <td>_ : _</td>
+            <td>mJah</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>10:00-11:20</td>
+            <td>2</td>
+            <td>ZWR</td>
+            <td>_ : _</td>
+            <td>RB</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>10:00-11:20</td>
+            <td>3</td>
+            <td>OUT</td>
+            <td>_ : _</td>
+            <td>GMF</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>11:45-13:05</td>
+            <td>1</td>
+            <td>CK</td>
+            <td>_ : _</td>
+            <td>KWR</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>11:45-13:05</td>
+            <td>2</td>
+            <td>4H</td>
+            <td>_ : _</td>
+            <td>Flow</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>11:45-13:05</td>
+            <td>3</td>
+            <td>FUJ</td>
+            <td>_ : _</td>
+            <td>RJP</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>13:30-14:50</td>
+            <td>1</td>
+            <td>ZWR</td>
+            <td>_ : _</td>
+            <td>4H</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>13:30-14:50</td>
+            <td>2</td>
+            <td>OUT</td>
+            <td>_ : _</td>
+            <td>FUJ</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>13:30-14:50</td>
+            <td>3</td>
+            <td>CK</td>
+            <td>_ : _</td>
+            <td>mJah</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>15:15-16:35</td>
+            <td>1</td>
+            <td>Flow</td>
+            <td>_ : _</td>
+            <td>RB</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>15:15-16:35</td>
+            <td>2</td>
+            <td>RJP</td>
+            <td>_ : _</td>
+            <td>GMF</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>15:15-16:35</td>
+            <td>3</td>
+            <td>KWR</td>
+            <td>_ : _</td>
+            <td>BUMP</td>
+          </tr>
+          <tr class="break">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>17:01-18:31</td>
+            <td>1</td>
+            <td>3.</td>
+            <td>Q3</td>
+            <td>6.</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>17:01-18:31</td>
+            <td>2</td>
+            <td>2.</td>
+            <td>Q4</td>
+            <td>7.</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>17:01-18:31</td>
+            <td>3</td>
+            <td>1.</td>
+            <td>Q1</td>
+            <td>8.</td>
+          </tr>
+          <tr class="break">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>07:40-09:10</td>
+            <td>1</td>
+            <td>4.</td>
+            <td>Q2</td>
+            <td>5.</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>07:40-09:10</td>
+            <td>2</td>
+            <td>9.</td>
+            <td>S''1</td>
+            <td>12.</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>07:40-09:10</td>
+            <td>3</td>
+            <td>10.</td>
+            <td>S''2</td>
+            <td>11.</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>09:35-11:05</td>
+            <td>1</td>
+            <td>WQ1</td>
+            <td>S1</td>
+            <td>WQ2</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>09:35-11:05</td>
+            <td>2</td>
+            <td>WQ3</td>
+            <td>S2</td>
+            <td>WQ4</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>09:35-11:05</td>
+            <td>3</td>
+            <td>LS''1</td>
+            <td>F11</td>
+            <td>LS''2</td>
+          </tr>
+        </table>
+        <!--<br><br><br><br>
+        <h2>SPIRIT TABLE</h2>
+        <table>
+          <tr>
+            <th>Team</th>
+            <th>Total</th>
+          </tr>
+          <tr *ngFor="let recipient of spiritMap | keyvalue">
+            <td>{{recipient.key}}</td>
+            <td>{{recipient.value}}</td>
+          </tr>
+        </table>-->
+      </div>
+
+      <div class="content" *ngIf="tabela">   <!--///////////////////////////////////////////////////////////////// RESULTS ////////////////////////////-->
+        <h1>Results</h1>
+        <div class="row" style="border-style: groove; background-color: #ededed; margin-left: 1px; margin-right: 1px">
+          <div class="column">
+          <h3>Pool A</h3>
+          <ol>
+            <li>Flow</li>
+            <li>ZWR</li>
+            <li>4H</li>
+            <li>RB</li>
+          </ol>
+          </div>
+          <div class="column">
+          <h3>Pool B</h3>
+          <ol>
+            <li>FUJ</li>
+            <li>RJP</li>
+            <li>GMF</li>
+            <li>OUT</li>
+          </ol>
+          </div>
+          <div class="column">
+          <h3>Pool C</h3>
+          <ol>
+            <li>BUMP!</li>
+            <li>mJah</li>
+            <li>KWR</li>
+            <li>CK</li>
+          </ol>
+          </div>
+        </div>
+        <br>
+        <div>
+        <h2>POOL A</h2>
+        <table style="width:100%">
+          <tr>
+            <th></th>
+            <th>Flow</th>
+            <th>ZWR</th>
+            <th>4H</th>
+            <th>RB</th>
+          </tr>
+          <tr>
+            <th>Flow</th>
+            <td class="x">X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>ZWR</th>
+            <td></td>
+            <td class="x">X</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>4H</th>
+            <td></td>
+            <td></td>
+            <td class="x">X</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>RB</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="x">X</td>
+          </tr>
+        </table>
+        </div>
+        <br>
+        <div>
+          <h2>POOL B</h2>
+          <table style="width:100%">
+            <tr>
+              <th></th>
+              <th>FUJ</th>
+              <th>RJP</th>
+              <th>GMF</th>
+              <th>OUT</th>
+            </tr>
+            <tr>
+              <th>FUJ</th>
+              <td class="x">X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>RJP</th>
+              <td></td>
+              <td class="x">X</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>GMF</th>
+              <td></td>
+              <td></td>
+              <td class="x">X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>OUT</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="x">X</td>
+            </tr>
+          </table>
+        </div>
+        <br>
+        <div>
+          <h2>POOL C</h2>
+          <table style="width:100%">
+            <tr>
+              <th></th>
+              <th>BUMP!</th>
+              <th>mJah</th>
+              <th>KWR</th>
+              <th>CK</th>
+            </tr>
+            <tr>
+              <th>BUMP!</th>
+              <td class="x">X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>mJah</th>
+              <td></td>
+              <td class="x">X</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>KWR</th>
+              <td></td>
+              <td></td>
+              <td class="x">X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>CK</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="x">X</td>
+            </tr>
+          </table>
+        </div>
+        <br><br><br>
+        <div>
+          <h3>1-8 winners bracket</h3>
+          <table>
+            <tr>
+              <td class="index">Q1</td>
+              <td style="background-color: mediumpurple">1.</td>
+              <td style="background-color: mediumpurple">8.</td>
+            </tr>
+            <tr>
+              <td>Q2</td>
+              <td style="background-color: lightblue">3.</td>
+              <td style="background-color: lightblue">6.</td>
+            </tr>
+            <tr>
+              <td>S1</td>
+              <td style="background-color: mediumpurple">WQ1</td>
+              <td style="background-color: lightblue">WQ2</td>
+            </tr>
+            <mat-icon style="position: center;">arrow_downward</mat-icon>
+            <br>
+            <tr class="final">
+              <td>F1</td>
+              <td style="background-color: white">WS1</td>
+              <td style="background-color: white">WS2</td>
+            </tr>
+            <mat-icon style="position: center;">arrow_upward</mat-icon>
+           <br>
+            <tr>
+              <td>S2</td>
+              <td style="background-color: orange">WQ3</td>
+              <td style="background-color: yellow">WQ4</td>
+            </tr>
+            <tr>
+              <td>Q3</td>
+              <td style="background-color: orange">2.</td>
+              <td style="background-color: orange">7.</td>
+            </tr>
+            <tr>
+              <td>Q4</td>
+              <td style="background-color: yellow">4.</td>
+              <td style="background-color: yellow">5.</td>
+            </tr>
+            <br>
+            <tr class="small-final">
+              <td>F3</td>
+              <td style="background-color: white">LS1</td>
+              <td style="background-color: white">LS2</td>
+            </tr>
+          </table>
+        </div>
+        <br><br><br>
+        <div>
+          <h3>5-8 bracket</h3>
+          <table>
+            <tr>
+              <td>S'1</td>
+              <td style="background-color: mediumpurple">LQ1</td>
+              <td style="background-color: lightblue">LQ2</td>
+            </tr>
+            <mat-icon style="position: center;">arrow_downward</mat-icon>
+            <br>
+            <tr class="small-final">
+              <td>F5</td>
+              <td style="background-color: white">WS'1</td>
+              <td style="background-color: white">WS'2</td>
+            </tr>
+            <mat-icon style="position: center;">arrow_upward</mat-icon>
+            <br>
+            <tr>
+              <td>S'2</td>
+              <td style="background-color: orange">LQ3</td>
+              <td style="background-color: yellow">LQ4</td>
+            </tr>
+            <br>
+            <tr class="small-final">
+              <td>F7</td>
+              <td style="background-color: white">LS'1</td>
+              <td style="background-color: white">LS'2</td>
+            </tr>
+          </table>
+        </div>
+        <br><br><br>
+        <div>
+          <h3>9-12 bracket</h3>
+          <table>
+            <tr>
+              <td>S''1</td>
+              <td>9.</td>
+              <td>12.</td>
+            </tr>
+            <mat-icon style="position: center;">arrow_downward</mat-icon>
+            <br>
+            <tr class="small-final">
+              <td>F9</td>
+              <td>WS''1</td>
+              <td>WS''2</td>
+            </tr>
+            <mat-icon style="position: center;">arrow_upward</mat-icon>
+            <br>
+            <tr>
+              <td>S''2</td>
+              <td>10.</td>
+              <td>11.</td>
+            </tr>
+            <br>
+            <tr>
+              <td>F11</td>
+              <td>LS''1</td>
+              <td>LS''2</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="content" *ngIf="mapka" >  <!--///////////////////////////////////////////////////////////////// MAP ////////////////////////////-->
+        <h1>Map</h1>
+        <iframe src="https://www.google.com/maps/d/u/3/embed?mid=1UY5zSD1r3S06MKoGOBCXumLhN4Q5kWos"  style="position: absolute" width="100%" height="100%" allowfullscreen></iframe>
+      </div>
+
+      <div class="content" *ngIf="program" >  <!--///////////////////////////////////////////////////////////////// PROGRAM ////////////////////////////-->
+        <h1>Program</h1>
+        <h2>Friday</h2>
+        <p><b>20:15 - Cypelek</b></p>
+        <ul>
+          <li> ZWR welcome party: grill and chill in Gospoda pod Cypelem</li>
+        </ul>
+        <h2>Saturday</h2>
+        <p style="color: red"><b>17:00 hour "W" - stop everything you're doing for 1 minute!</b></p>
+        <p><b>19:30 - Castle Marina</b></p>
+        <ul>
+          <li>ZWR b-day party</li>
+          <li>Gondola cruise</li>
+          <li>DJ Koń</li>
+        </ul>
+        <p><b>20:30 - Amfiteatr</b></p>
+        <ul>
+          <li>układ nr 1</li>
+          <li>występ 2 piosenki</li>
+          <li>układ nr 2</li>
+          <li>dance battle</li>
+        </ul>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+
+<!--
+<h1>top cat</h1>
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        &lt;!&ndash;<a class="nav-link" href="/">Ogłoszenia <span class="sr-only">(current)</span></a>&ndash;&gt;
+        <a (click)="fun_ogloszenia()" class="btn btn-info">Ogłoszenia</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="fun_tabela()"  class="btn btn-info">Tabela</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="fun_rozpiska()"  class="btn btn-info">Rozpiska</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="fun_mapka()"  class="btn btn-info">Mapka</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="fun_program()"  class="btn btn-info">Program</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+-->

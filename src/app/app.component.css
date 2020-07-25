@@ -80,3 +80,15 @@ tr.small-final{
   padding: 10px;
   margin-right: 10px;
 }
+
+/*styles helio
+
+@font-face {
+  font-family: 'Havana';
+
+  src: url(assets/fonts/Havana-Regular.woff);
+}
+
+h1{
+  font-family: Havana;
+}*/

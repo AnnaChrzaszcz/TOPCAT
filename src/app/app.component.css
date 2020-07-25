@@ -5,8 +5,8 @@
 .my-menu{
   background-color: #FACA1A;
   color: #822778;
-  font-family: 'Havana';
 }
+
 
 div .content{
   margin: 10px;
@@ -32,7 +32,7 @@ div.announcements {
   border-style: groove;
   border-color: lightgray;
   padding: 8px;
-  background-color: #f0edff;
+  background-color: #fff2c2;
   margin: 5px;
 }
 
@@ -92,13 +92,24 @@ tr.small-final{
   src: url(../assets/fonts/Havana-Regular.woff);
 }
 
+@font-face {
+  font-family: 'Rewir Light';
+
+  src: url(../assets/fonts/Rewir-light.woff);
+}
+
 h1{
   padding: 10px;
-  font-family: Havana;
+  font-family: 'Havana';
   font-size: 34px;
-  color: #822778;
 }
 p, ul, ol{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Rewir Light';
   font-size:14px;
+}
+
+.mat-list-item{
+  font-family: 'Havana';
+  font-size: 24px;
+
 }

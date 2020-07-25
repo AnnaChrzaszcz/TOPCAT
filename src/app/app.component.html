@@ -9,7 +9,7 @@
      <!-- <span (click)="fun_ogloszenia()" >TOP CAT <img alt="logo" src="assets/icons/logo.png" width="60px" height="60px"></span>-->
       <span> <img (click)="fun_ogloszenia()"  alt="logo" src="assets/icons/logoT.png" width="80px" height="80px"></span>
       <span class="menu-spacer"></span>
-      <div fxShow="true" fxHide.lt-md>
+      <div class="my-menu--list" fxShow="true" fxHide.lt-md>
         <!-- The following menu items will be hidden on both SM and XS screen sizes -->
         <a href="#" mat-button>Announcements</a>
         <a href="#" mat-button>Rules</a>
@@ -38,11 +38,12 @@
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>
       <div class="content" *ngIf="ogloszenia" >  <!--///////////////////////////////////////////////////////////////// ANNOUNCEMENTS ////////////////////////////-->
-        <h1>Announcements</h1>
-        <div style="border-style: groove; border-color: indianred; background-color: white" class="announcements">
+        <h1><img alt="ann" src="assets/icons/announ.png" class="icon">Announcements</h1>
+        <div style="border-style: groove; border-color: #822778; background-color: white" class="announcements">
 
             <h3>Contact</h3>
             <br>
+          <p>We are here for you!</p>
             <p>Helio <a href="tel:+48793818143">+48793818143</a>
             <br>
             Grycha  <a href="tel:+48575053660">+48575053660</a>
@@ -50,8 +51,8 @@
         </div>
         <div class="announcements">
 
-          <h3>Dance Battle by Grycha - Saturday B-day Party</h3>
-          21.7 15:00
+          <h3>💃Dance Battle by Grycha - Saturday B-day Party🕺</h3>
+          <p>21.7 15:00</p>
           <br>
           <p><img src="assets/icons/grycha.jpg" alt="grycha" style="height: 200px; width: 133px; margin: 3px; float: inherit"><br>Dear all!<br>
           Get ready for one of the biggest attractions of the evening! Apart from the fierce matches and the best style competition, each team will be challenged to participate in the DANCE BATTLE! What is this about? <strong>By the Wednesday 29/7 please send us two songs to which you will design a choreography</strong>. Each team will have to present their dance to the audience. During the tournament, we will draw you a rival against whom you will fight on stage. Also, on Saturday morning, each team will draw a theme that you and your rival will have to spontaneously implement into your choreography (the rival will have the same theme), for example: a belly dance, jungle dance, baptism, etc. You will have all day to think about your performance.
@@ -66,7 +67,8 @@
         <div class="announcements">
 
             <h3>Friday Welcome Party / grill for PLN beer for CC</h3>
-              <br> 20.07  13:01
+          <br> <p>20.07  13:01</p>
+          <img src="assets/icons/zamek.jpg" alt="grycha" style="width: 92%; margin: 4%; float: inherit">
             <br>
           <p>
             Ok, there is a B-day Party on Saturday, what other parties do we have? Welcome Party on Friday. You can register your team there and get your gifts, there will be a grill prepared by our partner Hotel "Dom Polonii" where you can buy some sizzling bites (saussage, kashanka, shashlik etc.) and beer.
@@ -76,25 +78,24 @@
         <div class="announcements">
 
           <h3>Music is important 🎤</h3>
-          <br>19.07  02:01
-            <br>
-          <p>
-            20 hours of games means 20 hours of music, and that's not even half of all the music! We want you to get involved in creating the playlist and share some songs with us. We will play it (at least once) during the tournament.
-            <br><a href="https://www.youtube.com/playlist?list=PLaL5nuPfgkIOw0I6nRK9ovC6XHE1lsFsS&jct=tseUe1CfzSrBfwelRd-GFP1kKIKNPg">🎵 ADD YOUR SONG 🎵</a>
-          </p>
-        </div>
-        <div class="announcements">
-          <p>
-            <h3>Gondola Cruise 🛶</h3>
-              <br>19.07  00:01
-            <br>
-            At first we wanted to organise a cruise for each team, but it turned out to be too much time-consuming. In the end we decided we will send 12 representants from every team to the cruise, which will also be one of the Teams Gigathlon's disciplines. They will get to know each other and will be challanged by a special team-building task. Please choose your daredevil (1 player from your team) to join the gondola cruise and sign up in tournament's office by the end of Saturday games.
+          <br><p>19.07  02:01</p>
+          <br>
+          <p>20 hours of games means 20 hours of music, and that's not even half of all the music! We want you to get involved in creating the playlist and share some songs with us. We will play it (at least once) during the tournament. <a href="https://www.youtube.com/playlist?list=PLaL5nuPfgkIOw0I6nRK9ovC6XHE1lsFsS&jct=tseUe1CfzSrBfwelRd-GFP1kKIKNPg">🎵 ADD YOUR SONG 🎵</a>
           </p>
         </div>
         <div class="announcements">
 
+            <h3>Gondola Cruise 🛶</h3>
+          <br><p>19.07  00:01</p>
+            <br>
+          <p>At first we wanted to organise a cruise for each team, but it turned out to be too much time-consuming. In the end we decided we will send 12 representants from every team to the cruise, which will also be one of the Teams Gigathlon's disciplines. They will get to know each other and will be challanged by a special team-building task. Please choose your daredevil (1 player from your team) to join the gondola cruise and sign up in tournament's office by the end of Saturday games.
+          </p>
+        </div>
+
+        <div class="announcements">
+
             <h3>🏟 First games on Friday at 18:30</h3>
-            <br>22.07  02:01
+          <br><p>18.07  17:01</p>
             <br>
             <p>Full schedule will be out soon, but already we know that first games for the TOP CAT 2020 title will happen on Friday evening. Here is the list of teams that will play on Friday:
             </p>
@@ -110,7 +111,7 @@
       </div>
 
       <div class="content" *ngIf="rules" >  <!--///////////////////////////////////////////////////////////////// RULES ////////////////////////////-->
-        <h1>Rules</h1>
+        <h1><img alt="ann" src="assets/icons/rules.png" class="icon">Rules</h1>
         <table style="width:100%">
           <th>Rules</th>
           <tr>WFDF Ratio Rule B (end zone decides – 3/4 women on the line)</tr>
@@ -137,14 +138,14 @@
       </div>
 
       <div class="content" *ngIf="spirit" >  <!--///////////////////////////////////////////////////////////////// SPIRIT ////////////////////////////-->
-        <h1>Spirit of the game</h1>
+        <h1><img alt="ann" src="assets/icons/sotg.png" class="icon">Spirit of the game</h1>
         <div >
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFdFuqTpU4R3GarAk4EaHxJV9fFILRXUej-ccDwoGsSfz6ig/viewform?embedded=true" style="position: absolute" width="95%" height="100%" >Ładuję…</iframe>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFdFuqTpU4R3GarAk4EaHxJV9fFILRXUej-ccDwoGsSfz6ig/viewform?embedded=true" style="position: absolute" width="92%" height="100%" >Ładuję…</iframe>
         </div>
       </div>
 
       <div class="content" *ngIf="rozpiska" >  <!--///////////////////////////////////////////////////////////////// SCHEDULE ////////////////////////////-->
-        <h1>Schedule</h1>
+        <h1><img alt="" src="assets/icons/sched.png" class="icon">Schedule</h1>
         <table style="width:100%">
           <h3>Friday</h3>
           <tr>
@@ -469,7 +470,7 @@
       </div>
 
       <div class="content" *ngIf="tabela">   <!--///////////////////////////////////////////////////////////////// RESULTS ////////////////////////////-->
-        <h1>Results</h1>
+        <h1><img alt="ann" src="assets/icons/resul.png" class="icon">Results</h1>
         <div class="row" style="border-style: groove; background-color: #ededed; margin-left: 1px; margin-right: 1px">
           <div class="column">
           <h3>Pool A</h3>
@@ -738,12 +739,12 @@
       </div>
 
       <div class="content" *ngIf="mapka" >  <!--///////////////////////////////////////////////////////////////// MAP ////////////////////////////-->
-        <h1>Map</h1>
+        <h1><img alt="ann" src="assets/icons/map.png" class="icon">Map</h1>
         <iframe src="https://www.google.com/maps/d/u/3/embed?mid=1UY5zSD1r3S06MKoGOBCXumLhN4Q5kWos"  style="position: absolute" width="95%" height="100%" allowfullscreen></iframe>
       </div>
 
       <div class="content" *ngIf="program" >  <!--///////////////////////////////////////////////////////////////// PROGRAM ////////////////////////////-->
-        <h1>Program</h1>
+        <h1><img alt="ann" src="assets/icons/program.png" class="icon">Program</h1>
         <h2>Friday</h2>
         <ul>
           <li>12:00-16:00 - Friendly games slot #MOSiR</li>
@@ -781,7 +782,7 @@
 
       </div>
       <div class="content" *ngIf="stream" >  <!--///////////////////////////////////////////////////////////////// PROGRAM ////////////////////////////-->
-        <h1>Stream</h1>
+        <h1><img alt="ann" src="assets/icons/stream.png" class="icon">Stream</h1>
         <iframe width="95%" src="https://www.youtube.com/embed/Uy_1agX00HE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </mat-sidenav-content>

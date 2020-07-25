@@ -36,7 +36,7 @@
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>
       <div class="content" *ngIf="ogloszenia" >  <!--///////////////////////////////////////////////////////////////// ANNOUNCEMENTS ////////////////////////////-->
-        <h1>Announcements - kalafior</h1>
+        <h1>Announcements</h1>
         <div style="border-style: groove; border-color: indianred; background-color: white" class="announcements">
           <p>
             <strong>Contact</strong>
@@ -130,6 +130,29 @@
 
       <div class="content" *ngIf="rules" >  <!--///////////////////////////////////////////////////////////////// RULES ////////////////////////////-->
         <h1>Rules</h1>
+        <table style="width:100%">
+          <th>Rules</th>
+          <tr>WFDF Ratio Rule B (end zone decides – 3/4 women on the line)</tr>
+            <th>Duration of games</th>
+          <tr>Friday pool game – 90 minutes (cap +1)</tr>
+          <tr>Saturday pool games – 80 minutes (cap +1)</tr>
+          <tr>Bracket games – 90 minutes (cap +1)</tr>
+          <tr>Point cap – 15 points</tr>
+          <th>Bracket ranking rules (1-12)</th>
+          <tr>
+            <ol>
+              <li>best wins ratio</li>
+              <li>best point difference</li>
+              <li>best points scored number</li>
+              <li>best fake – best of 3 in UltiBlefik 1 on 1 game</li>
+            </ol>
+          </tr>
+          <th>TOP CAT bracket (1-8)</th>
+          <tr>quarterfinals: 1. – 8., 2. – 7., 3. – 6., 4. – 5.</tr>
+          <tr>semifinals: 1./8. – 4./5., 2./7. – 3./6."</tr>
+          <th>LOW CAT bracket (9-12)</th>
+          <tr>semifinals: 9. – 12., 10. – 11.</tr>
+        </table>
       </div>
 
       <div class="content" *ngIf="spirit" >  <!--///////////////////////////////////////////////////////////////// SPIRIT ////////////////////////////-->
@@ -741,25 +764,40 @@
       <div class="content" *ngIf="program" >  <!--///////////////////////////////////////////////////////////////// PROGRAM ////////////////////////////-->
         <h1>Program</h1>
         <h2>Friday</h2>
-        <p><b>20:15 - Cypelek</b></p>
         <ul>
-          <li> ZWR welcome party: grill and chill in Gospoda pod Cypelem</li>
+          <li>12:00-16:00 - Friendly games slot #MOSiR</li>
+          <li>17:30 - Registration, warm up #MOSiR</li>
+          <li>18:30-20:00 - games #MOSiR</li>
+          <li><b>20:15-23:00 ZWR Welcome Party #Gospoda pod Cyplem (grill, chill, registration)</b></li>
         </ul>
         <h2>Saturday</h2>
-        <p style="color: red"><b>17:00 hour "W" - stop everything you're doing for 1 minute!</b></p>
-        <p><b>19:30 - Castle Marina</b></p>
         <ul>
-          <li>ZWR b-day party</li>
-          <li>Gondola cruise</li>
-          <li>DJ Koń</li>
+          <li>07:00-09:00 - BREAKFAST team boxes pick up #MOSiR</li>
+          <li>08:15 games start #MOSiR</li>
+          <li>10:30-18:00 bar openning hous (beer, zvyrolade)</li>
+          <li>12:00-18:00 - giftshop openning hours (tank-tops, discs, ultiboleks) #MOSiR</li>
+          <li>13:00 - FOOD: KWR, Flow, RJP, BUMP!, RB, GMF #MOSiR</li>
+          <li>15:00 - FOOD: OUT, ZWR, mJah, FUJ, 4hands, CK #MOSiR</li>
+          <li style="color: red"><b>17:00 hour "W" - stop everything you're doing for 1 minute!</b></li>
+          <li>19:30 - Gondola 12 cruise take-off #Marina</li>
+          <li><b>20:00 ZWR B-day party start #Amphitheatre</b></li>
+          <li>20:30-22:00 - Dance Battle by Grycha #Amphitheatre</li>
+          <li>22:30-24:00 - ZWR Band concert #Amphitheatre</li>
+          <li>24:00-3:00 DJ Koń #Amphitheatre</li>
         </ul>
-        <p><b>20:30 - Amfiteatr</b></p>
+
+        <h2>Sunday</h2>
         <ul>
-          <li>układ nr 1</li>
-          <li>występ 2 piosenki</li>
-          <li>układ nr 2</li>
-          <li>dance battle</li>
+          <li>06:40-08:40 - BREAKFAST team box pick up #MOSiR</li>
+          <li>07:40 games start #MOSiR</li>
+          <li>11:00-15:00 bar openning hous (beer, zvyrolade)</li>
+          <li>12:00-15:00 - giftshop openning hours (tank-tops, discs, ultiboleks) #MOSiR</li>
+          <li>13:00 - FOOD #MOSiR</li>
+          <li><b>14:50-4:20 - TOP CAT 2020 FINAL #MOSiR</b></li>
+          <li>16:30 - TOP CAT 2020 medal ceremony</li>
+
         </ul>
+
       </div>
       <div class="content" *ngIf="stream" >  <!--///////////////////////////////////////////////////////////////// PROGRAM ////////////////////////////-->
         <h1>Stream</h1>

@@ -5,6 +5,7 @@
 .my-menu{
   background-color: #FACA1A;
   color: #822778;
+  font-family: 'Havana';
 }
 
 div .content{
@@ -12,8 +13,8 @@ div .content{
 }
 
 table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
+  font-family: 'Open Sans', sans-serif;
+  font-size:14px;  border-collapse: collapse;
   width: 100%;
 }
 
@@ -56,6 +57,8 @@ div.announcements {
 h3{
   font-weight: bold;
   text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size:20px;
 }
 
 td.x{
@@ -81,14 +84,21 @@ tr.small-final{
   margin-right: 10px;
 }
 
-/*styles helio
+/*styles helio*/
 
 @font-face {
   font-family: 'Havana';
 
-  src: url(assets/fonts/Havana-Regular.woff);
+  src: url(../assets/fonts/Havana-Regular.woff);
 }
 
 h1{
+  padding: 10px;
   font-family: Havana;
-}*/
+  font-size: 34px;
+  color: #822778;
+}
+p, ul, ol{
+  font-family: 'Open Sans', sans-serif;
+  font-size:14px;
+}

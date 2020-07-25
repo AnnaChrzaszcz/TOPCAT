@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1595673420097,
+  "timestamp": 1595676198771,
   "index": "https://annachrzaszcz.github.io/TOPCAT/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://annachrzaszcz.github.io/TOPCAT/favicon.ico",
         "https://annachrzaszcz.github.io/TOPCAT/index.html",
-        "https://annachrzaszcz.github.io/TOPCAT/main.62bd29c831f63ca2db9f.js",
+        "https://annachrzaszcz.github.io/TOPCAT/main.c9e53728b70882d94f5a.js",
         "https://annachrzaszcz.github.io/TOPCAT/polyfills.969e30c8c00894a124e6.js",
         "https://annachrzaszcz.github.io/TOPCAT/runtime.e227d1a0e31cbccbf8ec.js",
         "https://annachrzaszcz.github.io/TOPCAT/styles.f7ece385938efd3f545f.css"
@@ -28,9 +28,12 @@
         "ignoreVary": true
       },
       "urls": [
+        "https://annachrzaszcz.github.io/TOPCAT/Havana-Regular.a1f5d0051acb1f1fbc47.woff",
         "https://annachrzaszcz.github.io/TOPCAT/assets/fonts/Havana-Regular.woff",
+        "https://annachrzaszcz.github.io/TOPCAT/assets/fonts/Rewir-Light.woff",
         "https://annachrzaszcz.github.io/TOPCAT/assets/icons/Android.svg",
         "https://annachrzaszcz.github.io/TOPCAT/assets/icons/announ.png",
+        "https://annachrzaszcz.github.io/TOPCAT/assets/icons/grycha.jpg",
         "https://annachrzaszcz.github.io/TOPCAT/assets/icons/helio.jpg",
         "https://annachrzaszcz.github.io/TOPCAT/assets/icons/icon-128x128.png",
         "https://annachrzaszcz.github.io/TOPCAT/assets/icons/icon-144x144.png",
@@ -55,9 +58,12 @@
   ],
   "dataGroups": [],
   "hashTable": {
+    "https://annachrzaszcz.github.io/TOPCAT/Havana-Regular.a1f5d0051acb1f1fbc47.woff": "35312725c10400116da86c543d7d11c79dd35e2f",
     "https://annachrzaszcz.github.io/TOPCAT/assets/fonts/Havana-Regular.woff": "35312725c10400116da86c543d7d11c79dd35e2f",
+    "https://annachrzaszcz.github.io/TOPCAT/assets/fonts/Rewir-Light.woff": "05aee7247b63944b9984a41f6fdcdef0b25b7f25",
     "https://annachrzaszcz.github.io/TOPCAT/assets/icons/Android.svg": "0ac76002ec1c901b6d59baf1151cf2e3fe901f8e",
     "https://annachrzaszcz.github.io/TOPCAT/assets/icons/announ.png": "a0b7f324a26da42852eb52b204321d1d3289ed92",
+    "https://annachrzaszcz.github.io/TOPCAT/assets/icons/grycha.jpg": "26a4809d7f3472f40e376990e42ffbd51d064c49",
     "https://annachrzaszcz.github.io/TOPCAT/assets/icons/helio.jpg": "6374492ac77e07559029906bc1ddd89328987b7c",
     "https://annachrzaszcz.github.io/TOPCAT/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "https://annachrzaszcz.github.io/TOPCAT/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
@@ -77,8 +83,8 @@
     "https://annachrzaszcz.github.io/TOPCAT/assets/icons/sotg.png": "371d4ed35b1072c006bf2f4e6f55efedee97568a",
     "https://annachrzaszcz.github.io/TOPCAT/assets/icons/stream.png": "c43b3fe53d4bf7bd3cd522bdfc33f8424dcdaabb",
     "https://annachrzaszcz.github.io/TOPCAT/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://annachrzaszcz.github.io/TOPCAT/index.html": "22c6c72a898db6eb637cfd1d85971b74e85c2a87",
-    "https://annachrzaszcz.github.io/TOPCAT/main.62bd29c831f63ca2db9f.js": "b1120897e96ba89d4b99840f8ef7e264841390c3",
+    "https://annachrzaszcz.github.io/TOPCAT/index.html": "7b01324fec226746e4784e8da077d24fdef5b78e",
+    "https://annachrzaszcz.github.io/TOPCAT/main.c9e53728b70882d94f5a.js": "d5a1462dea68984337da3e4ed8cc7bba5a63bdb6",
     "https://annachrzaszcz.github.io/TOPCAT/polyfills.969e30c8c00894a124e6.js": "91f4e3fd70316d9cb796b0ec07e8fe7fbbf93b15",
     "https://annachrzaszcz.github.io/TOPCAT/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "https://annachrzaszcz.github.io/TOPCAT/styles.f7ece385938efd3f545f.css": "0e406a8dac5dee04f9155d3c7afb875bf8d798d5"

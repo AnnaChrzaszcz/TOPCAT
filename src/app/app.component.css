@@ -50,6 +50,10 @@ div.announcements {
   border-radius: 2px;
 }
 
+div.announcements img{
+  width: unset;
+}
+
 * {
   box-sizing: border-box;
 }

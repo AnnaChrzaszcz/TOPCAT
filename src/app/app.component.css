@@ -113,7 +113,7 @@ h1{
 }
 p, ul, ol{
   font-family: 'Rewir Light';
-  font-size:14px;
+  font-size:15.5px;
   padding-top: 6px;
 }
 
@@ -122,3 +122,70 @@ p, ul, ol{
   font-size: 24px;
 
 }
+
+/*pull to refresh widget
+
+html {
+  overscroll-behavior-y: contain;
+}
+
+.pullable-content {
+  margin-top: 10px
+}
+
+.pull-to-refresh {
+  height: 100px;
+  background-color: red;
+  margin-top: 55px;
+  margin-bottom: 10px;
+  box-shadow: inset 0px -2px 6px 1px orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+
+}
+
+.pull-to-refresh .visible-pull {
+   visibility: visible;
+ }
+
+.pull-to-refresh .hidden-pull {
+   visibility: hidden;
+ }
+
+.pull-to-refresh-status {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.pull-to-refresh-loader {
+  border: 3px solid darkblue;
+  border-top: 3px solid lightblue;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+  opacity: 0;
+}
+
+.pull-to-refresh-loader .animate {
+   animation: spin 1.25s linear infinite;
+ }
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.start-pull {
+  transform: translateY(-100px);
+}
+
+.end-pull {
+  transform: translateY(-100px) !important;
+  transition: 0.4s ease-in-out;
+}
+*/

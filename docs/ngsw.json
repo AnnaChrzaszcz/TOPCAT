@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1596548481939,
+  "timestamp": 1597440249717,
   "index": "https://annachrzaszcz.github.io/TOPCAT/index.html",
   "assetGroups": [
     {
@@ -47,6 +47,7 @@
         "https://annachrzaszcz.github.io/TOPCAT/assets/icons/kostek.jpg",
         "https://annachrzaszcz.github.io/TOPCAT/assets/icons/logo.png",
         "https://annachrzaszcz.github.io/TOPCAT/assets/icons/logoT.png",
+        "https://annachrzaszcz.github.io/TOPCAT/assets/icons/map.jpg",
         "https://annachrzaszcz.github.io/TOPCAT/assets/icons/map.png",
         "https://annachrzaszcz.github.io/TOPCAT/assets/icons/program.png",
         "https://annachrzaszcz.github.io/TOPCAT/assets/icons/resul.png",
@@ -80,6 +81,7 @@
     "https://annachrzaszcz.github.io/TOPCAT/assets/icons/kostek.jpg": "950b8c3b665808c1900cdda64006abd914f61f5a",
     "https://annachrzaszcz.github.io/TOPCAT/assets/icons/logo.png": "0726c07a74213f374da16a5ad453cad2ed8aea42",
     "https://annachrzaszcz.github.io/TOPCAT/assets/icons/logoT.png": "66f53837196d533244beb37a1f17b28cf1eebfb9",
+    "https://annachrzaszcz.github.io/TOPCAT/assets/icons/map.jpg": "c4715f23f3509b2db39abe729997faccc4d7250c",
     "https://annachrzaszcz.github.io/TOPCAT/assets/icons/map.png": "3d6000bb188eb9c5a925e26ef33a8ec7dca3e3ca",
     "https://annachrzaszcz.github.io/TOPCAT/assets/icons/program.png": "a8c27148e19ac93e529a24b1ba515035e1711349",
     "https://annachrzaszcz.github.io/TOPCAT/assets/icons/resul.png": "cea244bbb7bea2ec8a8ae336e898a0d2fde77316",

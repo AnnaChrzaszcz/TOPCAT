@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1608211678848,
+  "timestamp": 1608211850617,
   "index": "https://annachrzaszcz.github.io/TOPCAT/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://annachrzaszcz.github.io/TOPCAT/favicon.ico",
         "https://annachrzaszcz.github.io/TOPCAT/index.html",
-        "https://annachrzaszcz.github.io/TOPCAT/main.06a8166e3a78d1582e4b.js",
+        "https://annachrzaszcz.github.io/TOPCAT/main.1227dd8d865fbcbaf05e.js",
         "https://annachrzaszcz.github.io/TOPCAT/polyfills.969e30c8c00894a124e6.js",
         "https://annachrzaszcz.github.io/TOPCAT/runtime.e227d1a0e31cbccbf8ec.js",
         "https://annachrzaszcz.github.io/TOPCAT/styles.f7ece385938efd3f545f.css"
@@ -91,8 +91,8 @@
     "https://annachrzaszcz.github.io/TOPCAT/assets/icons/stream.png": "c43b3fe53d4bf7bd3cd522bdfc33f8424dcdaabb",
     "https://annachrzaszcz.github.io/TOPCAT/assets/icons/zamek.jpg": "d6f69c758d43eb550125b44c3161b130fa5ca05e",
     "https://annachrzaszcz.github.io/TOPCAT/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://annachrzaszcz.github.io/TOPCAT/index.html": "c13fe9e7088ed3e186b9a9c3a88dfe9314acc335",
-    "https://annachrzaszcz.github.io/TOPCAT/main.06a8166e3a78d1582e4b.js": "d2abbe77f8d19e40ad696c88d0e5f89d33f61c0c",
+    "https://annachrzaszcz.github.io/TOPCAT/index.html": "0a2d77334eef11311b9115ce428e79349d0743d8",
+    "https://annachrzaszcz.github.io/TOPCAT/main.1227dd8d865fbcbaf05e.js": "bfe61025d6a33ded065987e1d402743a5b0c407e",
     "https://annachrzaszcz.github.io/TOPCAT/polyfills.969e30c8c00894a124e6.js": "91f4e3fd70316d9cb796b0ec07e8fe7fbbf93b15",
     "https://annachrzaszcz.github.io/TOPCAT/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "https://annachrzaszcz.github.io/TOPCAT/styles.f7ece385938efd3f545f.css": "0e406a8dac5dee04f9155d3c7afb875bf8d798d5"

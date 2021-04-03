@@ -19,14 +19,23 @@
       <span class="menu-spacer"></span>
       <div class="my-menu--list" fxShow="true" fxHide.lt-md>
         <!-- The following menu items will be hidden on both SM and XS screen sizes -->
-        <a href="#" mat-button>Announcements</a>
-        <a href="#" mat-button>Rules</a>
-        <a href="#" mat-button>Schedule</a>
-        <a href="#" mat-button>Results</a>
-        <a href="#" mat-button>Program</a>
-        <a href="#" mat-button>Map</a>
-        <a href="#" mat-button>SOTG</a>
-        <a href="#" mat-button>Stream</a>
+        <a href="#" (click)="fun_ogloszenia()" mat-button>Announcements</a>
+        <a href="#" (click)="fun_rules()" mat-button>Rules</a>
+        <a href="#" (click)="fun_rozpiska()" mat-button>Schedule</a>
+        <a href="#" (click)="fun_charts()" mat-button>Results</a>
+        <a href="#" (click)="fun_program()" mat-button>Program</a>
+        <a href="#" (click)="fun_mapka()" mat-button>Map</a>
+        <a href="#" (click)="fun_spirit()" mat-button>SOTG</a>
+        <a href="#" (click)="fun_stream()" mat-button>Stream</a>
+        <button href="#" [matMenuTriggerFor]="lastyear" mat-button>2020</button>
+
+        <mat-menu #lastyear="matMenu">
+          <a href="#" (click)="fun_rozpiska2020()" mat-menu-item>Schedule</a>
+          <a href="#" (click)="fun_charts2020()" mat-menu-item>Results</a>
+          <a href="#" (click)="fun_program2020()" mat-menu-item>Program</a>
+          <a href="#" (click)="fun_spirit2020()" mat-menu-item>SOTG</a>
+          <a href="#" (click)="fun_stream2020()" mat-menu-item>Stream</a>
+          </mat-menu>
       </div>
     </mat-toolbar-row>
   </mat-toolbar>
@@ -34,7 +43,7 @@
   <mat-sidenav-container fxFlexFill>
     <mat-sidenav #sidenav>
       <mat-nav-list>
-        <a href="#"  (click)="fun_ogloszenia(); sidenav.toggle()" mat-list-item><img alt="ann" src="assets/icons/announ.png" class="icon">Announcements</a>
+        <a href="#" (click)="fun_ogloszenia(); sidenav.toggle()" mat-list-item><img alt="ann" src="assets/icons/announ.png" class="icon">Announcements</a>
         <a href="#" (click)="fun_rules(); sidenav.toggle()" mat-list-item><img alt="rules" src="assets/icons/rules.png" class="icon">Rules</a>
         <a href="#" (click)="fun_rozpiska(); sidenav.toggle()" mat-list-item><img alt="schedule" src="assets/icons/sched.png" class="icon">Schedule</a>
         <a href="#" (click)="fun_charts(); sidenav.toggle()" mat-list-item><img alt="result" src="assets/icons/resul.png" class="icon">Results</a>
@@ -42,11 +51,18 @@
         <a href="#" (click)="fun_mapka(); sidenav.toggle()" mat-list-item><img alt="map" src="assets/icons/map.png" class="icon">Map</a>
         <a href="#" (click)="fun_spirit(); sidenav.toggle()" mat-list-item><img alt="sotg" src="assets/icons/sotg.png" class="icon">SOTG</a>
         <a href="#" (click)="fun_stream(); sidenav.toggle()" mat-list-item><img alt="stream" src="assets/icons/stream.png" class="icon">Stream</a>
+        <p>archive</p>
+          <a href="#" (click)="fun_rozpiska2020(); sidenav.toggle()" mat-menu-item><img alt="schedule" src="assets/icons/sched.png" class="icon">Schedule 2020</a>
+          <a href="#" (click)="fun_charts2020(); sidenav.toggle()" mat-menu-item><img alt="result" src="assets/icons/resul.png" class="icon">Results 2020</a>
+          <a href="#" (click)="fun_program2020(); sidenav.toggle()" mat-menu-item><img alt="program" src="assets/icons/program.png" class="icon">Program 2020</a>
+          <a href="#" (click)="fun_spirit2020(); sidenav.toggle()" mat-menu-item><img alt="sotg" src="assets/icons/sotg.png" class="icon">SOTG 2020</a>
+          <a href="#" (click)="fun_stream2020(); sidenav.toggle()" mat-menu-item><img alt="stream" src="assets/icons/stream.png" class="icon">Stream 2020</a>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>
       <div class="content" *ngIf="ogloszenia" >  <!--///////////////////////////////////////////////////////////////// ANNOUNCEMENTS ////////////////////////////-->
         <h1><img alt="ann" src="assets/icons/announ.png" class="icon">Announcements</h1>
+
         <div style="border-style: groove; border-color: #822778; background-color: white" class="announcements">
 
             <h3>Contact</h3>
@@ -56,6 +72,110 @@
             <br>
             Grycha <a href="tel:+48575053660">+48575053660</a>
             </p>
+        </div>
+        <div  class="announcements">
+          <h3>🎶 Dance Battle songs draw</h3>
+          <ul>
+            <li>KWR Knury  — AQUA, Barbie Girl</li>
+            <li>Chupacabras — SHAKIRA, Hips don't lie</li>
+            <li>Czarna Kompania — COOLIO, Gangsta Paradise</li>
+            <li>Hund Flach Werfen  — GALA, Freed from desire</li>
+            <li>JOGO BONITO — SASH!, Ecuador</li>
+            <li>FUJ  — LA BOUCHE, Be my lover</li>
+            <li>Flow  — 50 CENT, Candy shop</li>
+            <li>Zawierucha — SCOOTER, How much is the fish?</li>
+            <li>BUMP! — SEAN PAUL, Temperature</li>
+            <li>OUT — SNAP!, Rythm is a dancer</li>
+            <li>RJP — VENGA BOYS, Boom Boom Boom Boom</li>
+            <li>4hands — STROMAE, Alors On Danse</li>
+          </ul>
+
+
+          <h2>🪔Topcathlon (former Gigathlon) and first party hints</h2>
+
+          <p>TOP CAT is not only about Competition, but also about Amusement and Teambuilding. Last year 4hands claimed the Gigathlon title. Will they prove to be the best in the 2021 Topcathlon too? Let's get it started today!
+          </p>
+          <h3>🎤Friday Open Mic</h3>
+
+          <p>The pandemic alone time can be very boring or very creative. For example myself and cpt Perrolocostello spent some time in the Polish mountains this winter working on new songs. We want to share the outcome of that with you at the Welcome Party, and that's why...
+          The Friday party will be held at the well known amphitheatre next to the Pułtusk Castle thanks to our partner Hotel "Dom Polonii". ZWR Band concert will be the main gig of the evening, off course, but before that happens, we want to challenge you at Open Mic Competition!
+          </p>
+          <h4>Friday Open Mic Competition rules</h4>
+    <ul>
+      <li>Every team should perform at least 1 "show", to get ranked on the Topcathlon's board.</li>
+      <li>Every team can perform an unlimited number of "shows" in different personal arrangements.</li>
+      <li>The content of your performance is up to your imagination. We do accept any artistic form including:
+      <ol>
+        <li>singing</li>
+        <li>telling jokes</li>
+        <li>telling stories</li>
+        <li>rapping</li>
+        <li>playing music</li>
+        <li>roasting</li>
+        <li>stand up comedy</li>
+        <li>sketch comedy</li>
+        <li>theatre play</li>
+        <li>reading poems</li>
+        <li>doing magic tricks</li>
+        <li>other artistic performance</li>
+        <li>other talent show off</li>
+        <li>etc., etc.</li>
+      </ol></li>
+      <li>You can register your "show" upfront or decide to perform spontanically.</li>
+      <li>The "shows" will be observed by the Topcathlon's judging board and evaluated at the final ceremony.</li>
+    </ul>
+
+
+
+
+          <h3>🎶Saturday Dance Battle</h3>
+
+          <p>On the Saturday evening we will meet in a new place you don't know from last year. We will reveal more cards soon, but one thing is for sure: The Dance Battle is back.
+          This year we decided to make it even more spicy, by giving you more time to prepare. On the next Thursday, 1st of April at 9pm, tune in to our instagram account to see live streaming of the Dance Battle songs draw!
+          </p>
+          <h4>Dance Battle Competition rules</h4>
+  <ul>
+          <li>Every team should perform exactly 1 "show", to get ranked on the Topcathlon's board.</li>
+          <li>The dance should be a group effort, so start practicing your synchro, as soon as you'll find out your song.</li>
+          <li>Every team will be assigned a song to dance with upfront.</li>
+          <li>The song for every team will be drawn during Thursday evening live stream (the 1st of April at 9PM at @zawierucha_zwr instagram channel)</li>
+          <li>The "shows" will be observed by the Topcathlon's judging board and evaluated at the final ceremony.</li>
+  </ul>
+
+
+        </div>
+        <div class="announcements" style="list-style: none;">
+
+        <h3>⌚Updated fees schedule</h3>
+        <ul>
+          <li>2nd of April  —  Food & Acco form launch</li>
+          <li>23rd of April — half of the team fee payment deadline (200€)</li>
+          <li>30th of April — Food & Acco form fill out deadline</li>
+          <li>31st of May  — other half of the team fee payment deadline + Food & Acco costs (200€ + players costs)</li>
+        </ul>
+          <h4>Food price list:</h4>
+  <ul>
+    <li>breakfast + brunch, Saturday — 6€</li>
+    <li>lunch, Saturday — 7€</li>
+    <li>breakfast + brunch, Sunday — 6€</li>
+    <li>lunch, Sunday — 7€</li>
+
+          ------------------------------------
+          <li>4 meals package — 26€</li>
+  </ul>
+          <h4>Accomodation price list:</h4>
+
+          <i>note: first come, first served - limited places</i>
+<ul>
+  <li>basic (sleeping in the sports hall or on a camping) — 0€</li>
+          <li>forest adventure (accomodation in bungalows)  — [number of nights] * 10€,
+          only suitable for teams coming by cars, 15 minutes ride to the fields - Hotel Dwór nad Narwią</li>
+          <li>hostel — [number of nights] * 10€,
+           Polon, 20 min walk from the fields</li>
+          <li>hotel — [number of nights] * 13€,
+          10 min walk from the fields, place of the Friday Open Mic Party - Pułtusk Castle "Dom Polonii" hotel</li>
+</ul>
+          ❗<a href="https://www.cognitoforms.com/ZawieruchaWarszawa/FoodAccoFormTOPCAT2021">FOOD & ACCO FORM</a>❗
         </div>
         <div class="announcements" style="list-style: none;">
           <h3>🏆 TOP CAT 2020 final results</h3>
@@ -363,7 +483,24 @@
         </div>
       </div>
 
-      <div class="content" *ngIf="rules" >  <!--///////////////////////////////////////////////////////////////// RULES ////////////////////////////-->
+      <div class="content" *ngIf="rozpiska" >
+        <h1>2021 schedule coming soon</h1>
+      </div>
+      <div class="content" *ngIf="tabela" >
+        <h1>No results yet</h1>
+      </div>
+      <div class="content" *ngIf="program" >
+        <h1>2021 program will be published soon</h1>
+      </div>
+      <div class="content" *ngIf="spirit" >
+        <h1>No SOTG sheets for 2021 published yet</h1>
+      </div>
+      <div class="content" *ngIf="spirit" >
+        <h1>Nothing here yet</h1>
+      </div>
+
+
+        <div class="content" *ngIf="rules" >  <!--///////////////////////////////////////////////////////////////// RULES ////////////////////////////-->
         <h1><img alt="ann" src="assets/icons/rules.png" class="icon">Rules</h1>
         <table style="width:100%">
           <th>Rules</th>
@@ -389,8 +526,8 @@
         </table>
       </div>
 
-      <div class="content" *ngIf="spirit" >  <!--///////////////////////////////////////////////////////////////// SPIRIT ////////////////////////////-->
-        <h1><img alt="ann" src="assets/icons/sotg.png" class="icon">Spirit of the game</h1>
+      <div class="content" *ngIf="spirit2020" >  <!--///////////////////////////////////////////////////////////////// SPIRIT ////////////////////////////-->
+        <h1><img alt="ann" src="assets/icons/sotg.png" class="icon">Spirit of the game 2020</h1>
         <!--<div >
           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFdFuqTpU4R3GarAk4EaHxJV9fFILRXUej-ccDwoGsSfz6ig/viewform?embedded=true" style="position: absolute" width="92%" height="100%" >Ładuję…</iframe>
         </div>-->
@@ -416,8 +553,8 @@
         </div>
       </div>
 
-      <div class="content" *ngIf="rozpiska" >  <!--///////////////////////////////////////////////////////////////// SCHEDULE ////////////////////////////-->
-        <h1><img alt="" src="assets/icons/sched.png" class="icon">Schedule</h1>
+      <div class="content" *ngIf="rozpiska2020" >  <!--///////////////////////////////////////////////////////////////// SCHEDULE ////////////////////////////-->
+        <h1><img alt="" src="assets/icons/sched.png" class="icon">Schedule 2020</h1>
         <table style="width:100%">
           <h3>Friday</h3>
           <tr>
@@ -741,8 +878,8 @@
         </table>-->
       </div>
 
-      <div class="content" *ngIf="tabela">   <!--///////////////////////////////////////////////////////////////// RESULTS ////////////////////////////-->
-        <h1><img alt="ann" src="assets/icons/resul.png" class="icon">Results</h1>
+      <div class="content" *ngIf="tabela2020">   <!--///////////////////////////////////////////////////////////////// RESULTS ////////////////////////////-->
+        <h1><img alt="ann" src="assets/icons/resul.png" class="icon">Results 2020</h1>
         <div class="row" style="border-style: groove; background-color: #ededed; margin-left: 1px; margin-right: 1px">
           <div class="column">
           <h3>Pool A</h3>
@@ -1063,8 +1200,8 @@
         <iframe src="https://www.google.com/maps/d/u/3/embed?mid=1UY5zSD1r3S06MKoGOBCXumLhN4Q5kWos"  style="position: absolute" width="95%" height="100%" allowfullscreen></iframe>
       </div>
 
-      <div class="content" *ngIf="program" >  <!--///////////////////////////////////////////////////////////////// PROGRAM ////////////////////////////-->
-        <h1><img alt="ann" src="assets/icons/program.png" class="icon">Program</h1>
+      <div class="content" *ngIf="program2020" >  <!--///////////////////////////////////////////////////////////////// PROGRAM ////////////////////////////-->
+        <h1><img alt="ann" src="assets/icons/program.png" class="icon">Program 2020</h1>
         <h2>Friday</h2>
         <ul>
           <li>12:00-16:00 - Friendly games slot #MOSiR</li>
@@ -1104,8 +1241,8 @@
         </ul>
 
       </div>
-      <div class="content" *ngIf="stream" >  <!--///////////////////////////////////////////////////////////////// PROGRAM ////////////////////////////-->
-        <h1><img alt="ann" src="assets/icons/stream.png" class="icon">Stream</h1>
+      <div class="content" *ngIf="stream2020" >  <!--///////////////////////////////////////////////////////////////// PROGRAM ////////////////////////////-->
+        <h1><img alt="ann" src="assets/icons/stream.png" class="icon">Stream 2020</h1>
         <h3>Saturday</h3>
 
         <iframe width="95%" src="https://www.youtube.com/embed/q2j-0Mg-UW4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

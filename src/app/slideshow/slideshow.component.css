@@ -184,3 +184,10 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+.block{
+  display: block;
+}
+
+.none{
+  display: none;
+}

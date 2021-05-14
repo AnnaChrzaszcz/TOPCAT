@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {NgForm, FormControl, Validators} from '@angular/forms';
 import { Order } from './order.model';
+import {OrderService} from '../order.service';
 
 interface Size {
   value: string;
@@ -37,8 +38,6 @@ export class PreorderComponent {
     {value: 'male_xl', viewValue: 'XL'},
     {value: 'male_xxl', viewValue: 'XXL'},
     {value: 'male_xxxl', viewValue: 'XXXL'},
-
-
   ];
   femaleSizes: Size[] = [
     {value: 'female_xs', viewValue: 'XS'},
@@ -57,36 +56,29 @@ export class PreorderComponent {
 
   ];
   // sizes: string[] = ['S', 'M', 'L'];
-  // constructor(public postService: PostService){}
+  constructor(public orderService: OrderService){}
 
   onAddPost(form: NgForm): void{
     console.log(form);
     if(form.invalid){
       return;
     }
-    const post: Order = {
+    const order: Partial<Order> = {
       name: form.value.name,
       team: form.value.team,
       mail: form.value.mail,
       size: form.value.size,
       model: form.value.model,
-      // sex: form.value.sex
-
     };
-    // this.postService.addPost(form.value.title, form.value.content);
-    // form.resetForm();
+    this.orderService.addPost(order as Order)
+      .subscribe(
+      result => console.log(result),
+      error => console.log(error)
+    );
+    form.resetForm();
   }
   onChangeSex(sex: string): void{
     this.sex = sex;
     console.log(this.sex);
-  }
-
-  checkSex(sex: string): boolean{
-    if (this.sex === sex){
-      return true;
-    }
-    else{
-      return false;
-    }
   }
 }

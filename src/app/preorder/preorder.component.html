@@ -1,0 +1,232 @@
+
+<mat-card>
+  <h3>Order LUCKYGRASS tank top here</h3>
+  <mat-radio-group aria-label="sex">
+    <mat-label>Choose your size chart</mat-label><br>
+    <mat-radio-button
+      color="primary"
+      value="male"
+      (change)="onChangeSex($event.value);">
+      Male sizes
+    </mat-radio-button>
+    <mat-radio-button
+      value="female"
+      (change)="onChangeSex($event.value);">
+      Female sizes
+    </mat-radio-button>
+  </mat-radio-group>
+<hr>
+  <form *ngIf="sex == 'female'" (submit)="onAddPost(orderFormFemale)" #orderFormFemale="ngForm">
+    <h4>Tank top order form - female sizes</h4>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Female sizes</mat-label>
+      <mat-select
+        name="size"
+        matInput
+        ngModel
+        required
+        #size="ngModel"
+        placeholder="Female sizes">
+        <mat-option *ngFor="let size of femaleSizes" [value]="size.value">
+          {{size.viewValue}}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="size.invalid">
+        Please enter your size
+      </mat-error>
+    </mat-form-field>
+    <p style="margin-top: -15px; text-align: right; font-size: 10px;">
+      View <a href="./assets/Ultimate%20all%20Luckygrass.pdf" target="_blank">full LUCKYGRASS sizes list ("shirts" chart)</a>
+    </p>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Model</mat-label>
+      <mat-select
+        name="model"
+        matInput
+        ngModel
+        #model="ngModel"
+        required
+        placeholder="Model">
+        <mat-option *ngFor="let model of models" [value]="model.value">
+          <img [src]="model.image" [alt]="model.viewValue">{{model.viewValue}}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="model.invalid">
+        Please enter the chosen model
+      </mat-error>
+
+    </mat-form-field>
+
+
+    <mat-form-field>
+      <textarea
+        matInput
+        type="text"
+        name="name"
+        ngModel
+        #name="ngModel"
+        required
+        placeholder="Name"
+      ></textarea>
+      <mat-error *ngIf="name.invalid">
+        Please enter your name
+      </mat-error>
+    </mat-form-field>
+    <!--    <mat-form-field>-->
+    <!--      <textarea-->
+    <!--        matInput-->
+    <!--        type="text"-->
+    <!--        name="surname"-->
+    <!--        ngModel-->
+    <!--        #surname="ngModel"-->
+    <!--        required-->
+    <!--        placeholder="Surname"-->
+    <!--      ></textarea>-->
+    <!--      <mat-error *ngIf="surname.invalid">-->
+    <!--        Please enter your surname-->
+    <!--      </mat-error>-->
+    <!--    </mat-form-field>-->
+    <mat-form-field>
+      <textarea
+        matInput
+        type="text"
+        name="team"
+        ngModel
+        #team="ngModel"
+        required
+        placeholder="Team"
+      ></textarea>
+      <mat-error *ngIf="team.invalid">
+        Please enter your team name
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea
+        matInput
+        type="text"
+        name="mail"
+        ngModel
+        #mail="ngModel"
+        required
+        placeholder="E-mail"
+      ></textarea>
+      <mat-error *ngIf="mail.invalid">
+        Please enter your e-mail
+      </mat-error>
+    </mat-form-field>
+    <button
+      mat-raised-button
+      color="accent"
+      type="submit"
+    >Send preorder</button>
+  </form>
+
+  <form *ngIf="sex =='male'" (submit)="onAddPost(orderFormMale)" #orderFormMale="ngForm">
+    <h4>Tank top order form - male sizes</h4>
+    <mat-form-field appearance="fill">
+      <mat-label>Male sizes</mat-label>
+      <mat-select
+        name="size"
+        matInput
+        ngModel
+        required
+        #size="ngModel"
+        placeholder="Male sizes"
+        >
+        <mat-option *ngFor="let size of maleSizes" [value]="size.value">
+          {{size.viewValue}}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="size.invalid">
+        Please enter your size
+      </mat-error>
+    </mat-form-field>
+    <p style="padding-top: -15px; text-align: right; font-size: 10px;">
+      View <a href="./assets/Ultimate%20all%20Luckygrass.pdf" target="_blank">full LUCKYGRASS sizes list ("shirts" chart)</a>
+    </p>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Model</mat-label>
+      <mat-select
+        name="model"
+        matInput
+        ngModel
+        #model="ngModel"
+        required
+        placeholder="Model">
+        <mat-option *ngFor="let model of models" [value]="model.value">
+          <img [src]="model.image" [alt]="model.viewValue">{{model.viewValue}}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="model.invalid">
+        Please enter the chosen model
+      </mat-error>
+
+    </mat-form-field>
+
+
+    <mat-form-field>
+      <textarea
+        matInput
+        type="text"
+        name="name"
+        ngModel
+        #name="ngModel"
+        required
+        placeholder="Name"
+        ></textarea>
+      <mat-error *ngIf="name.invalid">
+        Please enter your name
+      </mat-error>
+    </mat-form-field>
+<!--    <mat-form-field>-->
+<!--      <textarea-->
+<!--        matInput-->
+<!--        type="text"-->
+<!--        name="surname"-->
+<!--        ngModel-->
+<!--        #surname="ngModel"-->
+<!--        required-->
+<!--        placeholder="Surname"-->
+<!--      ></textarea>-->
+<!--      <mat-error *ngIf="surname.invalid">-->
+<!--        Please enter your surname-->
+<!--      </mat-error>-->
+<!--    </mat-form-field>-->
+    <mat-form-field>
+      <textarea
+        matInput
+        type="text"
+        name="team"
+        ngModel
+        #team="ngModel"
+        required
+        placeholder="Team"
+      ></textarea>
+      <mat-error *ngIf="team.invalid">
+        Please enter your team name
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea
+        matInput
+        type="text"
+        name="mail"
+        ngModel
+        #mail="ngModel"
+        required
+        placeholder="E-mail"
+      ></textarea>
+      <mat-error *ngIf="mail.invalid">
+        Please enter your e-mail
+      </mat-error>
+    </mat-form-field>
+    <button
+      mat-raised-button
+      color="primary"
+      type="submit"
+      >Send preorder</button>
+  </form>
+</mat-card>

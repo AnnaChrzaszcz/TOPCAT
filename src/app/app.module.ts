@@ -14,11 +14,25 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatCardModule} from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+
+
+import {MatRadioModule} from '@angular/material/radio';
+import { PreorderComponent } from './preorder/preorder.component';
+import { SlideshowComponent } from './slideshow/slideshow.component';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    PreorderComponent,
+    SlideshowComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +46,13 @@ import {MatMenuModule} from '@angular/material/menu';
     MatButtonModule,
     MatListModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    MatCardModule,
+    FormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -76,7 +76,7 @@ h3{
   font-weight: bold;
   text-align: left;
   font-family: 'Rewir Light';
-  font-size:20px;
+  font-size: 20px;
 }
 
 h4{
@@ -127,7 +127,10 @@ p, ul, ol{
 
 }
 
-
+::selection{
+  background-color: #822778;
+  color: #FACA1A;
+}
 
 /*pull to refresh widget
 

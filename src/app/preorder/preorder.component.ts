@@ -72,10 +72,11 @@ export class PreorderComponent {
     };
     this.orderService.addPost(order as Order)
       .subscribe(
-      result => console.log(result),
+      result =>  console.log(result),
       error => console.log(error)
     );
     form.resetForm();
+    alert('Thank you, ' + order.name + '! Your order for ' + order.model + ' tank top, size: ' + order.size + ' has been submitted. You can collect your tank top in TOP CAT store or contact the organisers to do it other way. See you! 🎉');
   }
   onChangeSex(sex: string): void{
     this.sex = sex;

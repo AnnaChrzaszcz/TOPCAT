@@ -20,11 +20,8 @@ export class OrderService {
   addPost(order){
     const newOrder: Order = order;
     console.log(newOrder);
-    return this.http.post('http://localhost:3000/shirtForm', newOrder, {
-      headers: {
-        'Access-Control-Allow-Origin': '*'
-          },
-      })
+
+    return this.http.post('https://topcat21.herokuapp.com/shirtForm', newOrder)
       .pipe(tap(console.log));
   }
 }

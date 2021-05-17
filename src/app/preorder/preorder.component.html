@@ -105,13 +105,13 @@
     <mat-form-field>
       <textarea
         matInput
-        type="text"
+        type="email"
         name="mail"
         ngModel
         pattern="^[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
         #mail="ngModel"
         required
-        plceholder="E-mail"
+        placeholder="E-mail"
       ></textarea>
       <mat-error *ngIf="mail.errors?.required">
         Please enter your e-mail
@@ -217,9 +217,9 @@
       <textarea
         matInput
         type="email"
-        pattern="^[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
         name="mail"
         ngModel
+        pattern="^[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
         #mail="ngModel"
         required
         placeholder="E-mail"

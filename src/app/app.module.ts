@@ -26,6 +26,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatRadioModule} from '@angular/material/radio';
 import { PreorderComponent } from './preorder/preorder.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
+import { TokayComponent } from './tokay/tokay.component';
 
 
 
@@ -35,6 +36,7 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
     AppComponent,
     PreorderComponent,
     SlideshowComponent,
+    TokayComponent,
   ],
   imports: [
     BrowserModule,

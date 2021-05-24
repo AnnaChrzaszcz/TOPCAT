@@ -17,11 +17,19 @@ export class OrderService {
 
 
   // tslint:disable-next-line:typedef
-  addPost(order){
+  orderTanktop(order){
     const newOrder: Order = order;
     console.log(newOrder);
 
     return this.http.post('https://topcat21.herokuapp.com/shirtForm', newOrder)
+      .pipe(tap(console.log));
+  }
+
+  orderCleats(order){
+    const newOrder: Order = order;
+    console.log(newOrder);
+
+    return this.http.post('https://topcat21.herokuapp.com/shoesForm', newOrder)
       .pipe(tap(console.log));
   }
 }

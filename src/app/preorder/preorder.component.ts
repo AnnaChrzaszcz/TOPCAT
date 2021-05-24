@@ -70,7 +70,7 @@ export class PreorderComponent {
       size: form.value.size,
       model: form.value.model,
     };
-      this.orderService.addPost(order as Order)
+      this.orderService.orderTanktop(order as Order)
       .subscribe(
       result => {
         alert('Thank you, ' + order.name + '! Your order for ' + order.model + ' tank top, size: ' + order.size + ' has been submitted. You can collect your tank top in TOP CAT store or contact the organisers to do it other way. See you! 🎉');

@@ -74,6 +74,31 @@
             </p>
         </div>
         <div class="announcements">
+          <h3>🃏 PARTY CARDS SHOW DOWN by To Go Projekt</h3>
+          <br><p>18.06.21</p>
+          <p>
+            The next TOP CAT 2021 partner is Dominik from To Go Projekt responsible, for both parties: lights, music and... streaming.<br><br>
+📺 That's correct! This year you can have fun with us in Pułtusk even if you are somewhere else!<br><br>
+Dominik is used to say, there is no dream you can't achieve, and you know, our expectations are usually high 🎆<br><br>
+<a href="http://togoprojekt.pl/" target="_blank">To Go Projekt</a>
+          </p>
+          <ul style="list-style: none;">
+            <h2>Party schedule</h2>
+
+            <ol>🟡 Friday  20.00-23:30 @MOSiR<br>
+              &nbsp;Greek Food Truck (Mr. Gyros), TOP CAT bar, Open Mic</ol>
+              <ol>🟣 Saturday 20.00-03:00 @Klub Wodniaka<br>
+                &nbsp;campfire, TOP CAT bar, Dance Battle, DJs</ol>
+          </ul><br><br>
+
+          <a href="#" (click)="fun_mapka();" style="font-size: 1.4rem;">🗺 TOP CAT 2021 map</a><br><br>
+          <a href="#" (click)="fun_program();" style="font-size: 1.4rem;">🎈 TOP CAT 2021 program</a><br><br>
+
+
+
+
+        </div>
+        <div class="announcements">
           <h3>Eurodisc® Schedule Reveal</h3>
           <img src="./assets/eurodisc.jpg" alt="eurodisc" style="max-width: 80%;">
 
@@ -220,7 +245,7 @@
           <li>hostel — [number of nights] * 10€,
            Polon, 20 min walk from the fields</li>
           <li>hotel — [number of nights] * 13€,
-          10 min walk from the fields, place of the Friday Open Mic Party - Pułtusk Castle "Dom Polonii" hotel</li>
+          10 min walk from the fields, Pułtusk Castle "Dom Polonii" hotel</li>
 </ul>
           ❗<a href="https://www.cognitoforms.com/ZawieruchaWarszawa/FoodAccoFormTOPCAT2021">FOOD & ACCO FORM</a>❗
         </div>
@@ -810,7 +835,7 @@
 
           <tr>
             <td>F3 (LS1 - LS2)	</td>
-            <td>13:10-14:40</td>
+            <td>12:50-14:20</td>
             <td>1</td>
             <td>(LS1)</td>
             <td>-:-</td>
@@ -818,7 +843,7 @@
           </tr>
           <tr>
             <td>F5 (WS'1 - WS'2)	</td>
-            <td>13:10-14:40</td>
+            <td>12:50-14:20</td>
             <td>2</td>
             <td>(WS'1)</td>
             <td>-:-</td>
@@ -826,7 +851,7 @@
           </tr>
           <tr>
             <td>F7 (LS'1 - LS'2)	</td>
-            <td>13:10-14:40</td>
+            <td>12:50-14:20</td>
             <td>3</td>
             <td>(LS'1)</td>
             <td>-:-</td>
@@ -841,29 +866,74 @@
             <td>(WS2)</td>
           </tr>
         </table>
-
-
-        <!--<br><br><br><br>
-        <h2>SPIRIT TABLE</h2>
-        <table>
-          <tr>
-            <th>Team</th>
-            <th>Total</th>
-          </tr>
-          <tr *ngFor="let recipient of spiritMap | keyvalue">
-            <td>{{recipient.key}}</td>
-            <td>{{recipient.value}}</td>
-          </tr>
-        </table>-->
       </div>
       <div class="content" *ngIf="tabela" >
         <h1>No results yet</h1>
       </div>
       <div class="content" *ngIf="program" >
-        <h1>2021 program will be published soon</h1>
+        <h1><img alt="ann" src="assets/icons/program.png" class="icon">Program 2021</h1>
+        <h2>Friday</h2>
+        <ul>
+          <li>14:00-16:00 - practice / friendly games slot @MOSiR</li>
+          <li>16:00 - registration, warm up @MOSiR</li>
+          <li>17:15-19:50 - games @MOSiR</li>
+          <li>17:00-19:00 - giftshop openning hours (tank-tops, discs, socks, cryptocats exchange) @MOSiR [max 3 p. in queue]</li>
+          <li>19:00-23:00 - TOP CAT bar openning hours (beer, zvyrolade, drinks, mate), @MOSiR tennis court [max 5 p. in queue]</li>
+          <li><b>20:00-23:30 - ZWR Welcome Party @MOSiR (greek food truck, open mic, TOP CAT bar)</b></li>
+        </ul>
+        <h2>Saturday</h2>
+        <ul>
+          <li><b>07:00-09:30 - BREAKFAST team boxes pick up @MOSiR</b></li>
+          <li>08:15 - games start @MOSiR</li>
+          <li>10:00-13:00, 14:00-17:00 - physio openning hous @chill zone [max 1 p. in queue]</li>
+          <li>10:30-18:00 - TOP CAT bar openning hours (beer, zvyrolade, drinks, mate) @MOSiR tennis court [max 5 p. in queue]</li>
+          <li><b>11:20 - BRUNCH team pick up (♻ please return the boxes before)</b></li>
+          <li>11:00-13:00, 14:00-18:00 - giftshop openning hours (tank-tops, discs, socks, cryptocats exchange) @MOSiR [max 3 p. in queue]</li>
+          <li><b>14:30 - FOOD team pick up (♻ please return the boxes before)</b></li>
+          <li>15:00-16:30 - FOOD break</li>
+          <li>16:30-19:35 - quarterfinals @MOSiR</li>
+          <li><b>20:00 - Party start @Klub Wodniaka (🔥campfire start, bring your food!)</b></li>
+          <li>20:15-22:45 - Take Same DJ set </li>
+          <li><b>21:00-22:00 - Dance Battle</b><ol>
+            <li>Dance Battle 21:00 4HANDS "Alors On Danse"</li>
+            <li>Dance Battle 21:05 FUJ "Be my lover"</li>
+            <li>Dance Battle 21:10 Chupacabras "Hips Don't Lie"</li>
+            <li>Dance Battle 21:15 KWR KNURY "Barbie Girl"</li>
+            <li>Dance Battle 21:20 Czarna Kompania "Gangsta Paradise"</li>
+            <li>Dance Battle 21:25 JOGO BONITO "Ecuador"</li>
+            <li>Dance Battle 21:30  RJP "Boom Boom Boom Boom"</li>
+            <li>Dance Battle 21:35 OUT "Rythm is a dancer" </li>
+            <li>Dance Battle 21:40 BUMP! "Temperature"</li>
+            <li>Dance Battle 21:45 Flow "Candy Shop"</li>
+            <li>Dance Battle 21:50 AKS ZŁY KOSMODYSK "Freed from Desire"</li>
+            <li>Dance Battle 21:55 ZAWIERUCHA "How Much is the Fish"</li>
+          </ol>
+          </li>
+        </ul>
+          <ul>
+          <li>23:00-01:15 - Erbse DJ set </li>
+          <li>01:00-03:00 - mariobwouy DJ set </li>
+        </ul>
+
+        <h2>Sunday</h2>
+        <ul>
+          <li><b>06:40-09:00 - BREAKFAST team box pick up</b></li>
+          <li>07:40 - games start</li>
+          <li><b>11:00 - BRUNCH team pick up (♻ please return the boxes before)</b></li>
+          <li>11:00-14:00 - physio openning hous [max 1 p. in queue]</li>
+          <li>11:00-17:30 - bar openning hous (beer, zvyrolade, drinks, mate) [max 5 p. in queue]</li>
+          <li>10:00-14:00, 15:00-17:00 - giftshop openning hours (tank-tops, discs, socks, cryptocats exchange) @MOSiR [max 3 p. in queue]</li>
+          <li><b>13:30 - FOOD team pick up (♻ please return the boxes before)</b></li>
+          <li>14:50-4:20 - TOP CAT 2020 FINAL</li>
+          <li>16:30-17:00 - TOP CAT 2020 medal ceremony</li>
+
+        </ul>
       </div>
       <div class="content" *ngIf="spirit" >
-        <h1>No SOTG sheets for 2021 published yet</h1>
+        <h1><img alt="ann" src="assets/icons/sotg.png" class="icon">Spirit of the game 2021</h1>
+        <div style="height: 100vh;">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe_Xh58PITPOVatQslDKnRo3jKH2AhKOri2O5l2cyTI2WIpaQ/viewform?embedded=true" width="92%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Ładuję…</iframe>
+        </div>
       </div>
       <div class="content" *ngIf="stream" >
         <h1>Nothing here yet</h1>

@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1625588192094,
+  "timestamp": 1625676437397,
   "index": "https://annachrzaszcz.github.io/TOPCAT/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://annachrzaszcz.github.io/TOPCAT/favicon.ico",
         "https://annachrzaszcz.github.io/TOPCAT/index.html",
-        "https://annachrzaszcz.github.io/TOPCAT/main.801a82e6e8003cac1e37.js",
+        "https://annachrzaszcz.github.io/TOPCAT/main.e8c25ce27a70566f3e78.js",
         "https://annachrzaszcz.github.io/TOPCAT/polyfills.969e30c8c00894a124e6.js",
         "https://annachrzaszcz.github.io/TOPCAT/runtime.e227d1a0e31cbccbf8ec.js",
         "https://annachrzaszcz.github.io/TOPCAT/styles.f7ece385938efd3f545f.css"
@@ -133,8 +133,8 @@
     "https://annachrzaszcz.github.io/TOPCAT/assets/luckygrass.png": "b3b7773a95943fa18e880860e2462f2b92a5c09a",
     "https://annachrzaszcz.github.io/TOPCAT/assets/tokay.svg": "3969429ffcbf1d1a6927abdd4dd3936684e85249",
     "https://annachrzaszcz.github.io/TOPCAT/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://annachrzaszcz.github.io/TOPCAT/index.html": "033a21f48cb4da847018c725394aa8e3c75c3992",
-    "https://annachrzaszcz.github.io/TOPCAT/main.801a82e6e8003cac1e37.js": "01304716027cc03d81d72b7885cd6e7acebb0d32",
+    "https://annachrzaszcz.github.io/TOPCAT/index.html": "f487fc382eb6fffed21f4996defebf7bd834020f",
+    "https://annachrzaszcz.github.io/TOPCAT/main.e8c25ce27a70566f3e78.js": "0ea93512230d5e973d74dee2d1b437d26f7fef86",
     "https://annachrzaszcz.github.io/TOPCAT/polyfills.969e30c8c00894a124e6.js": "91f4e3fd70316d9cb796b0ec07e8fe7fbbf93b15",
     "https://annachrzaszcz.github.io/TOPCAT/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "https://annachrzaszcz.github.io/TOPCAT/styles.f7ece385938efd3f545f.css": "0e406a8dac5dee04f9155d3c7afb875bf8d798d5"

@@ -132,6 +132,17 @@ p, ul, ol{
   color: #FACA1A;
 }
 
+tr.header th{
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+@media screen and (max-width: 900px){
+  tr.header th{
+  writing-mode: horizontal-tb;
+  word-break: break-word;
+}
+}
+
 /*pull to refresh widget
 
 html {

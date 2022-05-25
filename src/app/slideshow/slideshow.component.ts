@@ -69,6 +69,38 @@ export class SlideshowComponent implements AfterViewInit {
       name: ''
     }
   ]
+  tank2022 = [
+    {
+      indexOf: 1,
+      source: 'assets/images/2022-1.png',
+      name: 'black neon'
+    },
+    {
+      indexOf: 2,
+      source: 'assets/images/2022-2.png',
+      name: 'black neon'
+    },
+    {
+      indexOf: 3,
+      source: 'assets/images/2022-3.png',
+      name: 'black neon'
+    },
+    {
+      indexOf: 4,
+      source: 'assets/images/2022-4.png',
+      name: 'white morning'
+    },
+    {
+      indexOf: 5,
+      source: 'assets/images/2022-5.png',
+      name: 'white morning'
+    },
+    {
+      indexOf: 6,
+      source: 'assets/images/2022-6.png',
+      name: 'white morning'
+    }
+  ]
   slides = [];
 
   constructor() { }
@@ -85,6 +117,9 @@ export class SlideshowComponent implements AfterViewInit {
     if (set === 'tokay'){
       this.slides = this.tokay;
     }
+    if (set === 'tank2022'){
+      this.slides = this.tank2022;
+    }
 
   }
 
@@ -100,6 +135,7 @@ export class SlideshowComponent implements AfterViewInit {
   showSlides(n): void {
     let i;
     const slides = Array.from(document.getElementsByClassName(this.slidesSet) as HTMLCollectionOf<HTMLElement>);
+    console.log(slides);
     const dots = Array.from(document.getElementsByClassName('dot') as HTMLCollectionOf<HTMLElement>);
     if (n > slides.length) {this.slideIndex = 1}
     if (n < 1) {this.slideIndex = slides.length}

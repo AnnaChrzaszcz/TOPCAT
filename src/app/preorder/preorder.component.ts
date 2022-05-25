@@ -11,7 +11,6 @@ interface Size {
 interface Model {
   value: string;
   viewValue: string;
-  image: string;
 }
 
 @Component({
@@ -48,13 +47,18 @@ export class PreorderComponent {
     {value: 'female_xxl', viewValue: 'XXL'}
     ];
   models: Model[] = [
-    {value: 'party_panther', viewValue: 'Party Panther', image: 'assets/images/icon1.png'},
-    {value: 'blue_tiger', viewValue: 'Blue Tiger', image: 'assets/images/icon2.png'},
-    {value: 'mellow_tiger', viewValue: 'Mellow Tiger', image: 'assets/images/icon3.png'},
-    {value: 'cosmic_cheetah', viewValue: 'Cosmic Cheetah', image: 'assets/images/icon4.png'},
-    {value: 'happy_cheetah', viewValue: 'Happy Cheetah', image: 'assets/images/icon5.png'},
+    {value: 'white_morning', viewValue: 'White Morning'},
+    {value: 'black_neon', viewValue: 'Black Neon'},
 
   ];
+  // models: Model[] = [
+  //   {value: 'party_panther', viewValue: 'Party Panther', image: 'assets/images/icon1.png'},
+  //   {value: 'blue_tiger', viewValue: 'Blue Tiger', image: 'assets/images/icon2.png'},
+  //   {value: 'mellow_tiger', viewValue: 'Mellow Tiger', image: 'assets/images/icon3.png'},
+  //   {value: 'cosmic_cheetah', viewValue: 'Cosmic Cheetah', image: 'assets/images/icon4.png'},
+  //   {value: 'happy_cheetah', viewValue: 'Happy Cheetah', image: 'assets/images/icon5.png'},
+
+  // ];
   // sizes: string[] = ['S', 'M', 'L'];
   constructor(public orderService: OrderService){}
 

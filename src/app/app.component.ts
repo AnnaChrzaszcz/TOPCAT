@@ -21,6 +21,11 @@ export class AppComponent{
   spirit2020 = false;
   stream2020 = false;
   tabela2020 = false;
+  rozpiska2021 = false;
+  program2021 = false;
+  spirit2021 = false;
+  stream2021 = false;
+  tabela2021 = false;
 
   /* menu: boolean[] = [this.ogloszenia, this.tabela, this.rozpiska, this.mapka, this.program];
    spiritMap = {Zawierucha: 0,
@@ -58,6 +63,11 @@ export class AppComponent{
     this.spirit2020 = false;
     this.stream2020 = false;
     this.tabela2020 = false;
+    this.rozpiska2021 = false;
+    this.program2021 = false;
+    this.spirit2021 = false;
+    this.stream2021 = false;
+    this.tabela2021 = false;
     /*this.menu.forEach(el => {
       el = false;
     });
@@ -78,6 +88,11 @@ export class AppComponent{
     this.spirit2020 = false;
     this.stream2020 = false;
     this.tabela2020 = false;
+    this.rozpiska2021 = false;
+    this.program2021 = false;
+    this.spirit2021 = false;
+    this.stream2021 = false;
+    this.tabela2021 = false;
   }
 
   fun_mapka(): void {
@@ -94,6 +109,11 @@ export class AppComponent{
     this.spirit2020 = false;
     this.stream2020 = false;
     this.tabela2020 = false;
+    this.rozpiska2021 = false;
+    this.program2021 = false;
+    this.spirit2021 = false;
+    this.stream2021 = false;
+    this.tabela2021 = false;
   }
 
   fun_program(): void {
@@ -110,6 +130,11 @@ export class AppComponent{
     this.spirit2020 = false;
     this.stream2020 = false;
     this.tabela2020 = false;
+    this.rozpiska2021 = false;
+    this.program2021 = false;
+    this.spirit2021 = false;
+    this.stream2021 = false;
+    this.tabela2021 = false;
   }
   fun_charts(): void {
     this.tabela = true;
@@ -125,6 +150,11 @@ export class AppComponent{
     this.spirit2020 = false;
     this.stream2020 = false;
     this.tabela2020 = false;
+    this.rozpiska2021 = false;
+    this.program2021 = false;
+    this.spirit2021 = false;
+    this.stream2021 = false;
+    this.tabela2021 = false;
   }
 
   fun_spirit(): void {
@@ -141,6 +171,11 @@ export class AppComponent{
     this.spirit2020 = false;
     this.stream2020 = false;
     this.tabela2020 = false;
+    this.rozpiska2021 = false;
+    this.program2021 = false;
+    this.spirit2021 = false;
+    this.stream2021 = false;
+    this.tabela2021 = false;
   }
 
   fun_stream(): void {
@@ -157,6 +192,11 @@ export class AppComponent{
     this.spirit2020 = false;
     this.stream2020 = false;
     this.tabela2020 = false;
+    this.rozpiska2021 = false;
+    this.program2021 = false;
+    this.spirit2021 = false;
+    this.stream2021 = false;
+    this.tabela2021 = false;
   }
 
   fun_rules(): void {
@@ -173,6 +213,11 @@ export class AppComponent{
     this.spirit2020 = false;
     this.stream2020 = false;
     this.tabela2020 = false;
+    this.rozpiska2021 = false;
+    this.program2021 = false;
+    this.spirit2021 = false;
+    this.stream2021 = false;
+    this.tabela2021 = false;
   }
   fun_rozpiska2020(): void {
     this.mapka = false;
@@ -188,6 +233,11 @@ export class AppComponent{
     this.spirit2020 = false;
     this.stream2020 = false;
     this.tabela2020 = false;
+    this.rozpiska2021 = false;
+    this.program2021 = false;
+    this.spirit2021 = false;
+    this.stream2021 = false;
+    this.tabela2021 = false;
   }
 
   fun_program2020(): void {
@@ -204,6 +254,11 @@ export class AppComponent{
     this.spirit2020 = false;
     this.stream2020 = false;
     this.tabela2020 = false;
+    this.rozpiska2021 = false;
+    this.program2021 = false;
+    this.spirit2021 = false;
+    this.stream2021 = false;
+    this.tabela2021 = false;
   }
   fun_charts2020(): void {
     this.tabela = false;
@@ -219,6 +274,11 @@ export class AppComponent{
     this.spirit2020 = false;
     this.stream2020 = false;
     this.tabela2020 = true;
+    this.rozpiska2021 = false;
+    this.program2021 = false;
+    this.spirit2021 = false;
+    this.stream2021 = false;
+    this.tabela2021 = false;
   }
 
   fun_spirit2020(): void {
@@ -235,6 +295,11 @@ export class AppComponent{
     this.spirit2020 = true;
     this.stream2020 = false;
     this.tabela2020 = false;
+    this.rozpiska2021 = false;
+    this.program2021 = false;
+    this.spirit2021 = false;
+    this.stream2021 = false;
+    this.tabela2021 = false;
   }
 
   fun_stream2020(): void {
@@ -251,5 +316,113 @@ export class AppComponent{
     this.spirit2020 = false;
     this.stream2020 = true;
     this.tabela2020 = false;
+    this.rozpiska2021 = false;
+    this.program2021 = false;
+    this.spirit2021 = false;
+    this.stream2021 = false;
+    this.tabela2021 = false;
+  }
+  fun_rozpiska2021(): void {
+    this.mapka = false;
+    this.rozpiska = false;
+    this.tabela = false;
+    this.program = false;
+    this.ogloszenia = false;
+    this.spirit = false;
+    this.stream = false;
+    this.rules = false;
+    this.rozpiska2020 = false;
+    this.program2020 = false;
+    this.spirit2020 = false;
+    this.stream2020 = false;
+    this.tabela2020 = false;
+    this.rozpiska2021 = true;
+    this.program2021 = false;
+    this.spirit2021 = false;
+    this.stream2021 = false;
+    this.tabela2021 = false;
+  }
+
+  fun_program2021(): void {
+    this.program = false;
+    this.mapka = false;
+    this.rozpiska = false;
+    this.tabela = false;
+    this.ogloszenia = false;
+    this.spirit = false;
+    this.stream = false;
+    this.rules = false;
+    this.rozpiska2020 = false;
+    this.program2020 = false;
+    this.spirit2020 = false;
+    this.stream2020 = false;
+    this.tabela2020 = false;
+    this.rozpiska2021 = false;
+    this.program2021 = true;
+    this.spirit2021 = false;
+    this.stream2021 = false;
+    this.tabela2021 = false;
+  }
+  fun_charts2021(): void {
+    this.tabela = false;
+    this.rozpiska = false;
+    this.program = false;
+    this.ogloszenia = false;
+    this.mapka = false;
+    this.spirit = false;
+    this.stream = false;
+    this.rules = false;
+    this.rozpiska2020 = false;
+    this.program2020 = false;
+    this.spirit2020 = false;
+    this.stream2020 = false;
+    this.tabela2020 = false;
+    this.rozpiska2021 = false;
+    this.program2021 = false;
+    this.spirit2021 = false;
+    this.stream2021 = false;
+    this.tabela2021 = true;
+  }
+
+  fun_spirit2021(): void {
+    this.spirit = false;
+    this.tabela = false;
+    this.rozpiska = false;
+    this.program = false;
+    this.ogloszenia = false;
+    this.mapka = false;
+    this.stream = false;
+    this.rules = false;
+    this.rozpiska2020 = false;
+    this.program2020 = false;
+    this.spirit2020 = false;
+    this.stream2020 = false;
+    this.tabela2020 = false;
+    this.rozpiska2021 = false;
+    this.program2021 = false;
+    this.spirit2021 = true;
+    this.stream2021 = false;
+    this.tabela2021 = false;
+  }
+
+  fun_stream2021(): void {
+    this.stream = false;
+    this.spirit = false;
+    this.tabela = false;
+    this.rozpiska = false;
+    this.program = false;
+    this.ogloszenia = false;
+    this.mapka = false;
+    this.rules = false;
+    this.rozpiska2020 = false;
+    this.program2020 = false;
+    this.spirit2020 = false;
+    this.stream2020 = false;
+    this.tabela2020 = false;
+    this.rozpiska2021 = false;
+    this.program2021 = false;
+    this.spirit2021 = false;
+    this.stream2021 = true;
+    this.tabela2021 = false;
   }
 }

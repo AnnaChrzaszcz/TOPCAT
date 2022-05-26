@@ -10,7 +10,7 @@ import { tap } from 'rxjs/operators';
 export class OrderService {
 
   // private orders: Order[] = [];
-  private url = 'http://localhost:3000';
+  // private url = 'http://localhost:3000';
 
   constructor(private http: HttpClient) { }
 
@@ -19,6 +19,8 @@ export class OrderService {
   // tslint:disable-next-line:typedef
   orderTanktop(order){
     const newOrder: Order = order;
+    console.log("DZIEŃ DOBRY!!!!!!!")
+    console.log(order);
     console.log(newOrder);
 
     return this.http.post('https://topcat21.herokuapp.com/shirtForm', newOrder)

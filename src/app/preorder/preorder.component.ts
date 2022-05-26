@@ -82,6 +82,7 @@ export class PreorderComponent {
         form.resetForm();
       },
       error => {
+        console.log("BŁĄĄĄĄĄĄĄĄĄĄĄĄĄĄĄĄD!!")
         console.log(error)
         alert('Ups, ' + order.name + '! Smth went wrong... Please try again or try dm ZWR to complete your preorer.');
       }

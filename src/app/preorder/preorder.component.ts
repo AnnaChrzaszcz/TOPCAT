@@ -43,12 +43,13 @@ export class PreorderComponent {
     {value: 'female_s', viewValue: 'S'},
     {value: 'female_m', viewValue: 'M'},
     {value: 'female_l', viewValue: 'L'},
-    {value: 'female_xl', viewValue: 'XL'},
-    {value: 'female_xxl', viewValue: 'XXL'}
-    ];
+    {value: 'female_xl', viewValue: 'XL'}
+  ];
   models: Model[] = [
-    {value: 'white_morning', viewValue: 'White Morning'},
-    {value: 'black_neon', viewValue: 'Black Neon'},
+    {value: 'white_morning_tank-top', viewValue: 'White Morning TANK TOP'},
+    {value: 'black_neon_tank-top', viewValue: 'Black Neon TANK TOP'},
+    {value: 'white_morning_t-shirt', viewValue: 'White Morning T-SHIRT'},
+    {value: 'black_neon_t-shirt', viewValue: 'Black Neon T-SHIRT'},
 
   ];
   // models: Model[] = [

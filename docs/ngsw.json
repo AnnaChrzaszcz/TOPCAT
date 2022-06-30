@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1653558678613,
+  "timestamp": 1656540561689,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.6db800239b19ac096e9b.js",
+        "/main.94625994e7898120e760.js",
         "/polyfills.969e30c8c00894a124e6.js",
         "/runtime.e227d1a0e31cbccbf8ec.js",
         "/styles.f7ece385938efd3f545f.css"
@@ -32,6 +32,8 @@
         "/Rewir-light.bf8a5792d846953d4339.woff",
         "/assets/Asset 3.svg",
         "/assets/Ultimate all Luckygrass.pdf",
+        "/assets/coolgear.png",
+        "/assets/coolgear_rozmiarowka.png",
         "/assets/eurodisc.jpg",
         "/assets/fonts/Havana-Regular.woff",
         "/assets/fonts/Rewir-Light.woff",
@@ -93,6 +95,8 @@
     "/Rewir-light.bf8a5792d846953d4339.woff": "05aee7247b63944b9984a41f6fdcdef0b25b7f25",
     "/assets/Asset 3.svg": "b0228a4d17d7a7bf1d582e6a9da4c1df0b5e93e0",
     "/assets/Ultimate all Luckygrass.pdf": "96fd0582b5a65e592343f8e52e9ac5464eb91a06",
+    "/assets/coolgear.png": "a4e67150bf044ffe5c2bf828e87731dd138edee1",
+    "/assets/coolgear_rozmiarowka.png": "5d1b7447781eb5a3ff541c6988e3b568052963db",
     "/assets/eurodisc.jpg": "cb7ba34fd87098d0fb08eac1259869dfc40787ac",
     "/assets/fonts/Havana-Regular.woff": "35312725c10400116da86c543d7d11c79dd35e2f",
     "/assets/fonts/Rewir-Light.woff": "05aee7247b63944b9984a41f6fdcdef0b25b7f25",
@@ -145,8 +149,8 @@
     "/assets/luckygrass.png": "b3b7773a95943fa18e880860e2462f2b92a5c09a",
     "/assets/tokay.svg": "3969429ffcbf1d1a6927abdd4dd3936684e85249",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "5881eb706211e516708660fe05113de0075e7ab3",
-    "/main.6db800239b19ac096e9b.js": "e1f260e27efc534d6e90103916820195ca6eeff7",
+    "/index.html": "ee3d1b3bb9c70e64a10c1c81abb780f707b4e7f2",
+    "/main.94625994e7898120e760.js": "7431f5abd577d3e9519e709f916b123fc138d9c7",
     "/polyfills.969e30c8c00894a124e6.js": "91f4e3fd70316d9cb796b0ec07e8fe7fbbf93b15",
     "/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "/styles.f7ece385938efd3f545f.css": "0e406a8dac5dee04f9155d3c7afb875bf8d798d5"

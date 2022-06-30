@@ -1,6 +1,6 @@
 
 <mat-card>
-  <h3>Order Cool Gear tank top here</h3>
+  <h3>Order Cool Gear here</h3>
   <mat-radio-group aria-label="sex">
     <mat-label>Choose your size chart</mat-label><br>
     <mat-radio-button
@@ -17,7 +17,7 @@
   </mat-radio-group>
 <hr>
   <form *ngIf="sex == 'female'" (submit)="onAddPost(orderFormFemale)" #orderFormFemale="ngForm">
-    <h4>Tank top order form - female sizes</h4>
+    <h4>Female sizes</h4>
 
     <mat-form-field appearance="fill">
       <mat-label>Female sizes</mat-label>
@@ -37,7 +37,8 @@
       </mat-error>
     </mat-form-field>
     <p style="text-align: right; font-size: 11px;">
-      View <a href="#" target="_blank">full Cool Gear sizes list</a>
+      View <a href="../../assets/coolgear_rozmiarowka.png" target="_blank">full Cool Gear sizes list</a>
+      <img src="../../assets/coolgear_rozmiarowka.png" alt="rozmiarowka" style="max-width: 100%;">
     </p>
 
     <mat-form-field appearance="fill">
@@ -129,7 +130,7 @@
   </form>
 
   <form *ngIf="sex =='male'" (submit)="onAddPost(orderFormMale)" #orderFormMale="ngForm">
-    <h4>Tank top order form - male sizes</h4>
+    <h4>Male sizes</h4>
     <mat-form-field appearance="fill">
       <mat-label>Male sizes</mat-label>
       <mat-select
@@ -149,9 +150,9 @@
       </mat-error>
     </mat-form-field>
     <p style="text-align: right; font-size: 11px;">
-      View <a href="#" target="_blank">full Cool Gear sizes list</a>
+      View <a href="../../assets/coolgear_rozmiarowka.png" target="_blank">full Cool Gear sizes list</a>
+      <img src="../../assets/coolgear_rozmiarowka.png" alt="rozmiarowka" style="max-width: 100%;">
     </p>
-
     <mat-form-field appearance="fill">
       <mat-label>Model</mat-label>
       <mat-select
@@ -162,7 +163,7 @@
         required
         placeholder="Model">
         <mat-option *ngFor="let model of models" [value]="model.value">
-          <img [src]="model.image" [alt]="model.viewValue">{{model.viewValue}}
+          {{model.viewValue}}
         </mat-option>
       </mat-select>
       <mat-error *ngIf="model.invalid">
